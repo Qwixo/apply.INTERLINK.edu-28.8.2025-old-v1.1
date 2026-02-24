@@ -1,13 +1,65 @@
-import React from 'react';
+import React, { useState } from 'react';
 import GreensboroHero from '../components/GreensboroHero';
 import TestimonialsSection from '../components/TestimonialsSection';
-import { Users, Globe, Calendar, MapPin, User, MessageSquare, Presentation, HelpCircle, BookOpen, Lightbulb, Check } from 'lucide-react';
+import { Users, Globe, Calendar, MapPin, User, MessageSquare, Presentation, HelpCircle, BookOpen, Lightbulb, Check, ChevronDown } from 'lucide-react';
+
+const APPLICATION_URL = "https://interlink.edu/student-application/";
 
 function GreensboroPage() {
+  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [formData, setFormData] = useState({
+    firstName: '',
+    email: '',
+    commitment: ''
+  });
+
   const scrollToApply = () => {
     const applySection = document.getElementById('apply');
     if (applySection) {
       applySection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const toggleFAQ = (index: number) => {
+    setOpenFAQ(openFAQ === index ? null : index);
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleFormSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const data = new URLSearchParams();
+    data.append('u', '607289d66021f9dbd8e30d04c');
+    data.append('id', 'f16b13f8cc');
+    data.append('FNAME', formData.firstName);
+    data.append('EMAIL', formData.email);
+    data.append('MMERGE13', 'greensboro-application');
+
+    try {
+      await fetch('https://interlink.us11.list-manage.com/subscribe/post', {
+        method: 'POST',
+        mode: 'no-cors',
+        body: data,
+      });
+
+      if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
+        (window as any).gtag('event', 'conversion', {
+          send_to: 'AW-1043003990/gNYTCOqGlLQaENb0q_ED',
+        });
+      }
+
+      setFormSubmitted(true);
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setFormSubmitted(true);
     }
   };
 
@@ -467,7 +519,386 @@ function GreensboroPage() {
 
       <TestimonialsSection guideStyle />
 
-      <div id="apply"></div>
+      {/* SECTION A: Is this for you? */}
+      <section className="bg-white py-16 md:py-24">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+              Is this for you?
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            {/* Card 1: This IS for you if... */}
+            <div className="bg-white rounded-2xl p-8 shadow-md border-2 border-green-500">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                This IS for you if…
+              </h3>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                  <span className="text-lg text-gray-700">You live in Greensboro (or nearby).</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                  <span className="text-lg text-gray-700">You want to speak English with confidence.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                  <span className="text-lg text-gray-700">You can show up and do the work.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                  <span className="text-lg text-gray-700">You want real progress, not slow tips.</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Card 2: This is NOT for you if... */}
+            <div className="bg-white rounded-2xl p-8 shadow-md border-2 border-red-500">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                This is NOT for you if…
+              </h3>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <span className="text-2xl text-red-600 flex-shrink-0">×</span>
+                  <span className="text-lg text-gray-700">You want something easy or passive.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-2xl text-red-600 flex-shrink-0">×</span>
+                  <span className="text-lg text-gray-700">You do not want to speak in class.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-2xl text-red-600 flex-shrink-0">×</span>
+                  <span className="text-lg text-gray-700">You want 'free only' learning.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-2xl text-red-600 flex-shrink-0">×</span>
+                  <span className="text-lg text-gray-700">You won't show up 5 days a week.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <button
+              onClick={scrollToApply}
+              className="bg-[#dc5d33] text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
+            >
+              I'm serious. Let's do it
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION B: Decision block */}
+      <section className="bg-gray-100 py-16 md:py-24">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+              Make a decision
+            </h2>
+            <p className="text-lg text-gray-700">
+              Choose your path today.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Left option: Keep doing free learning */}
+            <div className="bg-white rounded-2xl p-8 shadow-md">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Keep doing free learning
+              </h3>
+              <p className="text-lg text-gray-700 mb-6">
+                Watch videos and hope it clicks.
+              </p>
+              <a
+                href="https://www.youtube.com/results?search_query=free+english+course"
+                target="_blank"
+                rel="noreferrer"
+                className="block w-full bg-gray-500 text-white font-bold text-lg px-8 py-4 rounded-lg hover:bg-gray-600 transition-all duration-300 text-center"
+              >
+                Keep searching free courses
+              </a>
+            </div>
+
+            {/* Right option: Commit to real practice */}
+            <div className="bg-[#064088] rounded-2xl p-8 shadow-lg">
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Commit to real practice
+              </h3>
+              <p className="text-lg text-white mb-6">
+                Live classes. You speak every day.
+              </p>
+              <button
+                onClick={scrollToApply}
+                className="w-full bg-[#dc5d33] text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
+              >
+                Commit to real progress
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION C: FAQ */}
+      <section className="bg-white py-16 md:py-24">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+              Common questions
+            </h2>
+          </div>
+
+          <div className="space-y-4 mb-12">
+            {/* FAQ 1 */}
+            <div className="bg-gray-50 rounded-xl overflow-hidden">
+              <button
+                onClick={() => toggleFAQ(1)}
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 transition-colors"
+              >
+                <span className="text-lg font-semibold text-gray-900">Where are classes?</span>
+                <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 1 ? 'rotate-180' : ''}`} />
+              </button>
+              {openFAQ === 1 && (
+                <div className="px-6 pb-6">
+                  <p className="text-gray-700">On campus at UNCG in Greensboro.</p>
+                </div>
+              )}
+            </div>
+
+            {/* FAQ 2 */}
+            <div className="bg-gray-50 rounded-xl overflow-hidden">
+              <button
+                onClick={() => toggleFAQ(2)}
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 transition-colors"
+              >
+                <span className="text-lg font-semibold text-gray-900">How often are classes?</span>
+                <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 2 ? 'rotate-180' : ''}`} />
+              </button>
+              {openFAQ === 2 && (
+                <div className="px-6 pb-6">
+                  <p className="text-gray-700">Monday to Friday. Choose 2 or 4 hours a day.</p>
+                </div>
+              )}
+            </div>
+
+            {/* FAQ 3 */}
+            <div className="bg-gray-50 rounded-xl overflow-hidden">
+              <button
+                onClick={() => toggleFAQ(3)}
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 transition-colors"
+              >
+                <span className="text-lg font-semibold text-gray-900">Do I need to be advanced?</span>
+                <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 3 ? 'rotate-180' : ''}`} />
+              </button>
+              {openFAQ === 3 && (
+                <div className="px-6 pb-6">
+                  <p className="text-gray-700">No. You take a placement test. We put you in the right level.</p>
+                </div>
+              )}
+            </div>
+
+            {/* FAQ 4 */}
+            <div className="bg-gray-50 rounded-xl overflow-hidden">
+              <button
+                onClick={() => toggleFAQ(4)}
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 transition-colors"
+              >
+                <span className="text-lg font-semibold text-gray-900">Will I be fluent in 5 weeks?</span>
+                <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 4 ? 'rotate-180' : ''}`} />
+              </button>
+              {openFAQ === 4 && (
+                <div className="px-6 pb-6">
+                  <p className="text-gray-700">No. But you can feel more confident and speak more after one term.</p>
+                </div>
+              )}
+            </div>
+
+            {/* FAQ 5 */}
+            <div className="bg-gray-50 rounded-xl overflow-hidden">
+              <button
+                onClick={() => toggleFAQ(5)}
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 transition-colors"
+              >
+                <span className="text-lg font-semibold text-gray-900">What happens after I apply?</span>
+                <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 5 ? 'rotate-180' : ''}`} />
+              </button>
+              {openFAQ === 5 && (
+                <div className="px-6 pb-6">
+                  <p className="text-gray-700">We review your application. An advisor helps you with next steps and placement.</p>
+                </div>
+              )}
+            </div>
+
+            {/* FAQ 6 */}
+            <div className="bg-gray-50 rounded-xl overflow-hidden">
+              <button
+                onClick={() => toggleFAQ(6)}
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 transition-colors"
+              >
+                <span className="text-lg font-semibold text-gray-900">Is this for casual learners?</span>
+                <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 6 ? 'rotate-180' : ''}`} />
+              </button>
+              {openFAQ === 6 && (
+                <div className="px-6 pb-6">
+                  <p className="text-gray-700">No. This is for serious students who will show up and speak.</p>
+                </div>
+              )}
+            </div>
+
+            {/* FAQ 7 */}
+            <div className="bg-gray-50 rounded-xl overflow-hidden">
+              <button
+                onClick={() => toggleFAQ(7)}
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 transition-colors"
+              >
+                <span className="text-lg font-semibold text-gray-900">How do I see dates and fees?</span>
+                <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 7 ? 'rotate-180' : ''}`} />
+              </button>
+              {openFAQ === 7 && (
+                <div className="px-6 pb-6">
+                  <p className="text-gray-700">Use the 'See dates & fees' button above.</p>
+                </div>
+              )}
+            </div>
+
+            {/* FAQ 8 */}
+            <div className="bg-gray-50 rounded-xl overflow-hidden">
+              <button
+                onClick={() => toggleFAQ(8)}
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 transition-colors"
+              >
+                <span className="text-lg font-semibold text-gray-900">How does the discount work?</span>
+                <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 8 ? 'rotate-180' : ''}`} />
+              </button>
+              {openFAQ === 8 && (
+                <div className="px-6 pb-6">
+                  <p className="text-gray-700">It is for qualified applicants applying to the closest available term.</p>
+                </div>
+              )}
+            </div>
+          </div>
+
+          <div className="text-center">
+            <button
+              onClick={scrollToApply}
+              className="bg-[#dc5d33] text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
+            >
+              Apply now
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION D: Bottom Apply Section */}
+      <section id="apply" className="bg-gray-50 py-16 md:py-24">
+        <div className="max-w-2xl mx-auto px-4">
+          <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+            {!formSubmitted ? (
+              <>
+                <div className="text-center mb-8">
+                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+                    Apply in minutes
+                  </h2>
+                  <p className="text-lg text-gray-700">
+                    If you are serious, start here.
+                  </p>
+                </div>
+
+                <form onSubmit={handleFormSubmit} className="space-y-6">
+                  <div>
+                    <label htmlFor="firstName" className="block text-sm font-semibold text-gray-900 mb-2">
+                      First name <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      value={formData.firstName}
+                      onChange={handleInputChange}
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064088] focus:border-transparent"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-semibold text-gray-900 mb-2">
+                      Email <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064088] focus:border-transparent"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="commitment" className="block text-sm font-semibold text-gray-900 mb-2">
+                      Are you ready to show up and speak in class? <span className="text-red-500">*</span>
+                    </label>
+                    <select
+                      id="commitment"
+                      name="commitment"
+                      value={formData.commitment}
+                      onChange={handleInputChange}
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064088] focus:border-transparent"
+                    >
+                      <option value="">Select an option</option>
+                      <option value="yes">Yes, I'm ready</option>
+                      <option value="maybe">Maybe, I have questions</option>
+                      <option value="not-now">Not right now</option>
+                    </select>
+                  </div>
+
+                  <button
+                    type="submit"
+                    className="w-full bg-[#dc5d33] text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
+                  >
+                    Continue to official application
+                  </button>
+                </form>
+
+                <div className="mt-8 pt-6 border-t border-gray-200 text-center space-y-2">
+                  <p className="text-sm text-gray-600">
+                    We review every application.
+                  </p>
+                  <p className="text-sm text-gray-600">
+                    Not everyone is accepted.
+                  </p>
+                </div>
+              </>
+            ) : (
+              <div className="text-center">
+                <div className="mb-6">
+                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Check className="w-8 h-8 text-green-600" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                    Thank you!
+                  </h3>
+                  <p className="text-lg text-gray-700 mb-6">
+                    Now complete your official application.
+                  </p>
+                </div>
+                <a
+                  href={APPLICATION_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-block bg-[#dc5d33] text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
+                >
+                  Begin official application
+                </a>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
