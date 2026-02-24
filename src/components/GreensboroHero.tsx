@@ -78,7 +78,7 @@ const GreensboroHero = () => {
 
             {/* Selective tagline */}
             <p className="text-sm md:text-base text-gray-600 font-medium">
-              This program is for serious students ONLY.
+              This program is for serious learners ONLY.
             </p>
           </motion.div>
         </div>
