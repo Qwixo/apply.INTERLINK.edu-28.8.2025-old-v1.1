@@ -35,8 +35,6 @@ function GreensboroPage() {
               <p className="text-lg font-semibold text-gray-900">On-campus at UNCG (Greensboro)</p>
             </div>
           </div>
-
-        
         </div>
       </section>
 
