@@ -82,6 +82,8 @@ function GreensboroPage() {
       </section>
 
 
+          </div>
+
           {/* Premium line */}
           <p className="text-center text-lg md:text-xl text-gray-600 font-medium mb-10">
             This is a serious program for serious students.
