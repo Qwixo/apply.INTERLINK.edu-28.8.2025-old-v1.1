@@ -375,6 +375,98 @@ function GreensboroPage() {
         </div>
       </section>
 
+      {/* Section 7: Timeline - What Happens After You Apply */}
+      <section className="bg-gray-50 py-16 md:py-24">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+              What happens after you apply
+            </h2>
+            <p className="text-lg text-gray-700">
+              We guide you step by step.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
+            {/* Step 1 */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-full bg-[#064088] flex items-center justify-center mb-4">
+                <span className="text-white font-bold text-xl">1</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Apply
+              </h3>
+              <p className="text-gray-700">
+                Send your application online.
+              </p>
+            </div>
+
+            {/* Step 2 */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-full bg-[#064088] flex items-center justify-center mb-4">
+                <span className="text-white font-bold text-xl">2</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                We review
+              </h3>
+              <p className="text-gray-700">
+                We check if you are a fit.
+              </p>
+            </div>
+
+            {/* Step 3 */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-full bg-[#064088] flex items-center justify-center mb-4">
+                <span className="text-white font-bold text-xl">3</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Advisor helps you
+              </h3>
+              <p className="text-gray-700">
+                You get help with your next steps.
+              </p>
+            </div>
+
+            {/* Step 4 */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-full bg-[#064088] flex items-center justify-center mb-4">
+                <span className="text-white font-bold text-xl">4</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Placement test
+              </h3>
+              <p className="text-gray-700">
+                We place you in the right level.
+              </p>
+            </div>
+
+            {/* Step 5 */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-full bg-[#064088] flex items-center justify-center mb-4">
+                <span className="text-white font-bold text-xl">5</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Start class
+              </h3>
+              <p className="text-gray-700">
+                You join and speak every day.
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <button
+              onClick={scrollToApply}
+              className="bg-[#dc5d33] text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
+            >
+              Start my application
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <TestimonialsSection guideStyle />
+
       <div id="apply"></div>
     </div>
   );
