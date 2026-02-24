@@ -263,6 +263,8 @@ function GreensboroPage() {
         </div>
       </section>
 
+      <TestimonialsSection guideStyle />
+
       {/* Section 5: Intensive Practice */}
       <section className="bg-gray-50 py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-4">
@@ -321,8 +323,6 @@ function GreensboroPage() {
           </div>
         </div>
       </section>
-
-      <TestimonialsSection guideStyle />
 
       <div id="apply"></div>
     </div>
