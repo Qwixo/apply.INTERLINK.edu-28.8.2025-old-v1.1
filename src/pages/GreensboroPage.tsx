@@ -76,7 +76,7 @@ function GreensboroPage() {
             <p className="text-lg md:text-xl text-gray-600 italic mt-10">
               It's not because you are not smart. You just need practice.
             </p>
-            </div>
+
           </div>
         </div>
       </section>
