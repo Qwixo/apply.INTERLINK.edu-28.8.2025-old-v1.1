@@ -303,6 +303,65 @@ function GreensboroPage() {
         </div>
       </section>
 
+      {/* Section 5: Intensive Practice */}
+      <section className="bg-gray-50 py-16 md:py-20">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="bg-white rounded-2xl shadow-sm p-8 md:p-12">
+            <div className="text-center mb-8">
+              <p className="text-sm font-semibold text-[#064088] tracking-wide uppercase mb-3">
+                INTENSIVE PRACTICE
+              </p>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                5 days a week. Real speaking practice.
+              </h2>
+              <div className="max-w-2xl mx-auto space-y-2">
+                <p className="text-lg text-gray-700">
+                  You do not learn fast with one class a week.
+                </p>
+                <p className="text-lg text-gray-700">
+                  Here, you practice speaking every day.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-6">
+              {/* Part-time Card */}
+              <div className="border-2 border-gray-200 rounded-xl p-6 hover:border-[#064088] transition-colors">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Part-time
+                </h3>
+                <p className="text-gray-700">
+                  2 hours a day • Monday–Friday
+                </p>
+              </div>
+
+              {/* Full-time Card */}
+              <div className="border-2 border-gray-200 rounded-xl p-6 hover:border-[#064088] transition-colors">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Full-time
+                </h3>
+                <p className="text-gray-700">
+                  4 hours a day • Monday–Friday
+                </p>
+              </div>
+            </div>
+
+            <p className="text-center text-gray-600 mb-8">
+              Choose the pace that fits your life. You still practice a lot.
+            </p>
+
+            <div className="text-center">
+              <button
+                onClick={scrollToApply}
+                className="bg-[#dc5d33] text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
+              >
+                I want fast progress
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <TestimonialsSection guideStyle />
 
       <div id="apply"></div>
