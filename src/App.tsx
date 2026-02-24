@@ -12,6 +12,7 @@ import VNGuidePage from './pages/VNGuidePage'
 import VNStartPage from './pages/VNStartPage';
 import MEXICOLandingPage from './pages/MEXICOLandingPage';
 import StartPage_no_popup from './pages/StartPage_no_popup';
+import GreensboroPage from './pages/GreensboroPage';
 
 
 
@@ -44,8 +45,9 @@ function App() {
         <Route path="/vn/start" element={<VNStartPage />} />
         <Route path="/mx/" element={<MEXICOLandingPage />} />
         <Route path="/en/info" element={<StartPage_no_popup />} />
+        <Route path="/greensboro" element={<GreensboroPage />} />
 
-        
+
 
 
 
