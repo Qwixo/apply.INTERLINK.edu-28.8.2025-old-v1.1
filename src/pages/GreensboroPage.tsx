@@ -36,15 +36,7 @@ function GreensboroPage() {
             </div>
           </div>
 
-          {/* CTA Button */}
-          <div className="mt-12 text-center">
-            <button
-              onClick={scrollToApply}
-              className="bg-[#dc5d33] text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
-            >
-              Start speaking now
-            </button>
-          </div>
+        
         </div>
       </section>
 
