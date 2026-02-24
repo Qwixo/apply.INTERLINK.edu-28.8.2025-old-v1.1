@@ -82,6 +82,45 @@ function GreensboroPage() {
       </section>
 
 
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-8">
+            {/* Card 1 */}
+            <div className="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex justify-center mb-4">
+                <User className="w-12 h-12 text-[#064088]" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">
+                Live teacher
+              </h3>
+              <p className="text-gray-700 text-center">
+                Your teacher is live, not a recording.
+              </p>
+            </div>
+
+            {/* Card 2 */}
+            <div className="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex justify-center mb-4">
+                <MessageSquare className="w-12 h-12 text-[#064088]" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">
+                You speak every day
+              </h3>
+              <p className="text-gray-700 text-center">
+                You practice speaking in every class.
+              </p>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex justify-center mb-4">
+                <Users className="w-12 h-12 text-[#064088]" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">
+                Small groups
+              </h3>
+              <p className="text-gray-700 text-center">
+                More talking time and more feedback.
+              </p>
             </div>
           </div>
 
