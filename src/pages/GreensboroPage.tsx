@@ -1,6 +1,6 @@
 import React from 'react';
 import GreensboroHero from '../components/GreensboroHero';
-import { Users, Globe, Calendar, MapPin, User, MessageSquare, Presentation, HelpCircle, BookOpen, Lightbulb } from 'lucide-react';
+import { Users, Globe, Calendar, MapPin, User, MessageSquare, Presentation, HelpCircle, BookOpen, Lightbulb, Check } from 'lucide-react';
 
 function GreensboroPage() {
   const scrollToApply = () => {
@@ -144,6 +144,69 @@ function GreensboroPage() {
             >
               Check if I'm a fit
             </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 4.5: The Real Secret - Daily Practice */}
+      <section className="bg-gray-100 py-16 md:py-20">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+              {/* Left Column: Content */}
+              <div>
+                <div className="text-xs md:text-sm uppercase tracking-widest text-[#dc5d33] font-bold mb-4">
+                  THE REAL SECRET
+                </div>
+
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                  More practice. Every day.
+                </h2>
+
+                <div className="space-y-3 mb-8">
+                  <p className="text-lg text-gray-700">
+                    Apps and YouTube can teach rules.
+                  </p>
+                  <p className="text-lg text-gray-700">
+                    But they can't make you speak every day.
+                  </p>
+                  <p className="text-lg text-gray-700 font-semibold">
+                    INTERLINK does. You practice in every class.
+                  </p>
+                </div>
+
+                <button
+                  onClick={scrollToApply}
+                  className="bg-[#dc5d33] text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
+                >
+                  Give me real practice
+                </button>
+              </div>
+
+              {/* Right Column: Mini Bullets */}
+              <div className="flex flex-col gap-6">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
+                    <Check className="w-6 h-6 text-white" strokeWidth={3} />
+                  </div>
+                  <p className="text-xl font-semibold text-gray-900">Live teacher</p>
+                </div>
+
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
+                    <Check className="w-6 h-6 text-white" strokeWidth={3} />
+                  </div>
+                  <p className="text-xl font-semibold text-gray-900">Small groups</p>
+                </div>
+
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
+                    <Check className="w-6 h-6 text-white" strokeWidth={3} />
+                  </div>
+                  <p className="text-xl font-semibold text-gray-900">Daily speaking</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
