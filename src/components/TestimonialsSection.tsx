@@ -221,9 +221,9 @@ const TestimonialsSection = ({ guideStyle = false }) => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             {/* Video 1 */}
             <div className="border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-              <div className="aspect-video w-full">
-                <iframe 
-                  className="w-full h-full"
+              <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
+                <iframe
+                  className="absolute inset-0 w-full h-full"
                   src="https://www.youtube.com/embed/WzvHP99gpBc"
                   title="Student Testimonial - Video 1"
                   frameBorder="0"
@@ -249,9 +249,9 @@ const TestimonialsSection = ({ guideStyle = false }) => {
             
             {/* Video 2 */}
             <div className="border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-              <div className="aspect-video w-full">
-                <iframe 
-                  className="w-full h-full"
+              <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
+                <iframe
+                  className="absolute inset-0 w-full h-full"
                   src="https://www.youtube.com/embed/MBqWwl6C7Us"
                   title="Student Testimonial - Video 2"
                   frameBorder="0"

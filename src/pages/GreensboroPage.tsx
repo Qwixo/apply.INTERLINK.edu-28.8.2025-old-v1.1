@@ -84,7 +84,12 @@ function GreensboroPage() {
 
       {/* Section 4: Mechanism Block */}
       <section className="bg-gray-50 py-16 md:py-24">
-
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+              Here is how you improve faster.
+            </h2>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-8">
             {/* Card 1 */}
@@ -298,7 +303,7 @@ function GreensboroPage() {
         </div>
       </section>
 
-      <TestimonialsSection />
+      <TestimonialsSection guideStyle />
 
       <div id="apply"></div>
     </div>
