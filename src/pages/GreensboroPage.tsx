@@ -76,15 +76,6 @@ function GreensboroPage() {
             <p className="text-lg md:text-xl text-gray-600 italic mt-10">
               It's not because you are not smart. You just need practice.
             </p>
-
-            {/* CTA Button */}
-            <div className="mt-12">
-              <button
-                onClick={scrollToApply}
-                className="bg-[#dc5d33] text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
-              >
-                I want to speak better
-              </button>
             </div>
           </div>
         </div>
