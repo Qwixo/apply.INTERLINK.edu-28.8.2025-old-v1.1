@@ -517,8 +517,6 @@ function GreensboroPage() {
         </div>
       </section>
 
-      <TestimonialsSection guideStyle />
-
       {/* SECTION A: Is this for you? */}
       <section className="bg-white py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4">
