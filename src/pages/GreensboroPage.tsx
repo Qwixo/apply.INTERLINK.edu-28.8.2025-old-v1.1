@@ -1000,7 +1000,7 @@ function GreensboroPage() {
         {openFAQ === 6 && (
           <div className="px-5 pb-5">
             <p className="text-gray-700">
-              Apply anyway. We will help you start as soon as possible.
+              Apply anyway. We will help you start as soon as possible. You can also email us at admissions@interlink.edu
             </p>
           </div>
         )}
