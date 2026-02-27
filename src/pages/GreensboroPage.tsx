@@ -644,9 +644,6 @@ function GreensboroPage() {
             <p className="text-lg text-gray-700 mb-2">
               3 simple steps. We help you.
             </p>
-            <p className="text-gray-700">
-              An advisor will help you.
-            </p>
           </div>
 
           <div className="space-y-4 mb-12">
