@@ -1037,7 +1037,7 @@ function GreensboroPage() {
         {openFAQ === 8 && (
           <div className="px-5 pb-5">
             <p className="text-gray-700">
-              Most students finish in about 4–12 months. It depends on your level and effort.
+              1 term is 5 weeks. The entire program has 6 levels. Most students finish the entire program in about 4–12 months. It depends on your level and effort.
             </p>
           </div>
         )}
