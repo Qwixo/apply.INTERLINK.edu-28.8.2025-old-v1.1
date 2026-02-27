@@ -43,7 +43,7 @@ const GreensboroHero = () => {
             Live classes. You speak every day. Small groups. Fast progress.
           </motion.p>
 
-          {/* YouTube Video Embed */}
+          {/* Google Drive Video Embed */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -53,10 +53,10 @@ const GreensboroHero = () => {
             <div className="relative w-full max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-lg" style={{ paddingBottom: '56.25%' }}>
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="YouTube video"
+                src="https://drive.google.com/file/d/1rA8y00AqAgvszZZ6zD6kPBwNodRVi7dK/preview"
+                title="INTERLINK Video"
                 frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="autoplay"
                 allowFullScreen
               />
             </div>
