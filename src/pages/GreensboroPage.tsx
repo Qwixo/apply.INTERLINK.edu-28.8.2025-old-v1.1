@@ -463,8 +463,15 @@ function GreensboroPage() {
                   <td className="px-6 py-4 text-gray-700">Apr 1 – May 8</td>
                   <td className="px-6 py-4 text-gray-700">March 18</td>
                   <td className="px-6 py-4">
-                    <div className="font-bold text-gray-900">From $1,360 (full-time)</div>
-                    <div className="text-sm text-red-600 font-semibold">Save up to $340</div>
+                    <div className="font-bold text-gray-900">
+                      Full-time: $1,360
+                      <span className="text-xs text-gray-500 font-normal"> (was $1,700)</span>
+                    </div>
+                    <div className="text-sm text-gray-600 font-normal">
+                      Part-time: $680
+                      <span className="text-xs text-gray-500"> (was $850)</span>
+                    </div>
+                    <div className="text-sm text-red-600 font-semibold mt-1">Save up to $340</div>
                   </td>
                 </tr>
 
@@ -473,7 +480,10 @@ function GreensboroPage() {
                   <td className="px-6 py-4 font-bold text-gray-900">Spring II 2026</td>
                   <td className="px-6 py-4 text-gray-700">May 12 – Jun 17</td>
                   <td className="px-6 py-4 text-gray-700">April 28</td>
-                  <td className="px-6 py-4 text-gray-700">See dates & fees</td>
+                  <td className="px-6 py-4">
+                    <div className="font-bold text-gray-900">Full-time: $1,700</div>
+                    <div className="text-sm text-gray-600">Part-time: $850</div>
+                  </td>
                 </tr>
 
                 {/* Summer */}
@@ -481,7 +491,10 @@ function GreensboroPage() {
                   <td className="px-6 py-4 font-bold text-gray-900">Summer 2026</td>
                   <td className="px-6 py-4 text-gray-700">Jun 19 – Jul 28</td>
                   <td className="px-6 py-4 text-gray-700">June 5</td>
-                  <td className="px-6 py-4 text-gray-700">See dates & fees</td>
+                  <td className="px-6 py-4">
+                    <div className="font-bold text-gray-900">Full-time: $1,700</div>
+                    <div className="text-sm text-gray-600">Part-time: $850</div>
+                  </td>
                 </tr>
 
                 {/* Fall I */}
@@ -489,7 +502,10 @@ function GreensboroPage() {
                   <td className="px-6 py-4 font-bold text-gray-900">Fall I 2026</td>
                   <td className="px-6 py-4 text-gray-700">Aug 17 – Sep 23</td>
                   <td className="px-6 py-4 text-gray-700">August 3</td>
-                  <td className="px-6 py-4 text-gray-700">See dates & fees</td>
+                  <td className="px-6 py-4">
+                    <div className="font-bold text-gray-900">Full-time: $1,700</div>
+                    <div className="text-sm text-gray-600">Part-time: $850</div>
+                  </td>
                 </tr>
 
                 {/* Fall II */}
@@ -497,7 +513,10 @@ function GreensboroPage() {
                   <td className="px-6 py-4 font-bold text-gray-900">Fall II 2026</td>
                   <td className="px-6 py-4 text-gray-700">Sep 25 – Nov 3</td>
                   <td className="px-6 py-4 text-gray-700">See dates & fees</td>
-                  <td className="px-6 py-4 text-gray-700">See dates & fees</td>
+                  <td className="px-6 py-4">
+                    <div className="font-bold text-gray-900">Full-time: $1,700</div>
+                    <div className="text-sm text-gray-600">Part-time: $850</div>
+                  </td>
                 </tr>
 
                 {/* Fall III */}
@@ -505,7 +524,10 @@ function GreensboroPage() {
                   <td className="px-6 py-4 font-bold text-gray-900">Fall III 2026</td>
                   <td className="px-6 py-4 text-gray-700">Nov 5 – Dec 16</td>
                   <td className="px-6 py-4 text-gray-700">See dates & fees</td>
-                  <td className="px-6 py-4 text-gray-700">See dates & fees</td>
+                  <td className="px-6 py-4">
+                    <div className="font-bold text-gray-900">Full-time: $1,700</div>
+                    <div className="text-sm text-gray-600">Part-time: $850</div>
+                  </td>
                 </tr>
               </tbody>
             </table>
