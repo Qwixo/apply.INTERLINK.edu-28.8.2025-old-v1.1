@@ -1018,8 +1018,8 @@ function GreensboroPage() {
         {openFAQ === 7 && (
           <div className="px-5 pb-5">
             <p className="text-gray-700">
-              No. You take a placement test. We put you in the right level.<br />
-              We don't work with absolute begginers.
+              No. You take a placement test and we put you in the right level.<br />
+              If you know some English, you are okay. We don't work with absolute begginers that don't speak ANY English at all.
             </p>
           </div>
         )}
