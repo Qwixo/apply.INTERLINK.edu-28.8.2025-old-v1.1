@@ -10,7 +10,7 @@ const GreensboroHero = () => {
   };
 
   return (
-    <section className="bg-white pt-8 md:pt-12 pb-10 md:pb-12">
+    <section className="bg-white pt-3 md:pt-4 pb-1 md:pb-12">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center max-w-4xl mx-auto">
           {/* Kicker */}
