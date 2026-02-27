@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import GreensboroHero from '../components/GreensboroHero';
 import TestimonialsSection from '../components/TestimonialsSection';
-import { Users, Globe, Calendar, MapPin, User, MessageSquare, Presentation, HelpCircle, BookOpen, Lightbulb, Check, ChevronDown } from 'lucide-react';
+import { Users, Globe, Calendar, MapPin, User, MessageSquare, Presentation, HelpCircle, BookOpen, Lightbulb, Check, ChevronDown, X } from 'lucide-react';
 
 const APPLICATION_URL = "https://interlink.edu/student-application/";
 
 function GreensboroPage() {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [showBanner, setShowBanner] = useState(true);
   const [formData, setFormData] = useState({
     firstName: '',
     email: '',
@@ -19,6 +20,15 @@ function GreensboroPage() {
     if (applySection) {
       applySection.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const handleBannerClick = () => {
+    scrollToApply();
+  };
+
+  const handleCloseBanner = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setShowBanner(false);
   };
 
   const toggleFAQ = (index: number) => {
@@ -65,6 +75,25 @@ function GreensboroPage() {
 
   return (
     <div className="min-h-screen">
+      {showBanner && (
+        <div
+          onClick={handleBannerClick}
+          className="sticky top-0 z-50 w-full bg-red-600 text-white cursor-pointer py-2 px-4"
+        >
+          <div className="max-w-7xl mx-auto flex items-center justify-between">
+            <p className="text-xs md:text-sm leading-tight">
+              20% off Spring I (Apr 1–May 8) if you apply by March 18.
+            </p>
+            <button
+              onClick={handleCloseBanner}
+              className="p-2 hover:bg-red-700 rounded transition-colors flex-shrink-0 ml-2"
+              aria-label="Close banner"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+      )}
       <GreensboroHero />
 
       {/* Section 2: Credibility Strip */}
