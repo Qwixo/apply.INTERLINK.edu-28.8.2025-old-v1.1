@@ -1175,7 +1175,7 @@ function GreensboroPage() {
 
                   <div>
                     <label htmlFor="commitment" className="block text-sm font-semibold text-gray-900 mb-2">
-                      Are you ready to show up and speak in class? <span className="text-red-500">*</span>
+                      Are you willing to commit and take learning English seriously? <span className="text-red-500">*</span>
                     </label>
                     <select
                       id="commitment"
