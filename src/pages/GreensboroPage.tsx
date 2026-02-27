@@ -634,83 +634,87 @@ function GreensboroPage() {
 
 
 
-      {/* Section 7: Timeline - What Happens After You Apply */}
+      {/* Section 7: How to apply */}
       <section className="bg-gray-50 py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-              What happens after you apply
+              How to apply
             </h2>
-            <p className="text-lg text-gray-700">
-              We guide you step by step.
+            <p className="text-lg text-gray-700 mb-8">
+              3 simple steps. We help you.
             </p>
+
+            <div className="bg-white border border-gray-200 rounded-xl p-4 flex items-center gap-4 inline-flex">
+              <img
+                src="https://i.imgur.com/pg4XxDm.png"
+                alt="Ana"
+                className="w-16 h-16 rounded-full object-cover flex-shrink-0"
+              />
+              <div className="text-left">
+                <p className="font-bold text-gray-900">Your advisor: Ana</p>
+                <p className="text-sm text-gray-700">Ana will help you step by step.</p>
+              </div>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
-            {/* Step 1 */}
-            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-full bg-[#064088] flex items-center justify-center mb-4">
-                <span className="text-white font-bold text-xl">1</span>
+          <div className="space-y-4 mb-12">
+            {/* Card 1 */}
+            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-lg bg-[#064088] flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold text-lg">1</span>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">
+                    Apply + documents
+                  </h3>
+                  <p className="text-gray-700">
+                    Send your application and your supporting documents.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
-                Apply
-              </h3>
-              <p className="text-gray-700">
-                Send your application online.
-              </p>
             </div>
 
-            {/* Step 2 */}
-            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-full bg-[#064088] flex items-center justify-center mb-4">
-                <span className="text-white font-bold text-xl">2</span>
+            {/* Card 2 */}
+            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-lg bg-[#064088] flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold text-lg">2</span>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">
+                    Pay the application fee
+                  </h3>
+                  <p className="text-gray-700">
+                    Pay online after you apply. If you get stuck, we help.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
-                We review
-              </h3>
-              <p className="text-gray-700">
-                We check if you are a fit.
-              </p>
             </div>
 
-            {/* Step 3 */}
-            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-full bg-[#064088] flex items-center justify-center mb-4">
-                <span className="text-white font-bold text-xl">3</span>
+            {/* Card 3 */}
+            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-lg bg-[#064088] flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold text-lg">3</span>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">
+                    Placement test
+                  </h3>
+                  <p className="text-gray-700">
+                    We schedule your placement test and place you in the right level.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
-                Advisor helps you
-              </h3>
-              <p className="text-gray-700">
-                You get help with your next steps.
-              </p>
             </div>
+          </div>
 
-            {/* Step 4 */}
-            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-full bg-[#064088] flex items-center justify-center mb-4">
-                <span className="text-white font-bold text-xl">4</span>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
-                Placement test
-              </h3>
-              <p className="text-gray-700">
-                We place you in the right level.
-              </p>
-            </div>
-
-            {/* Step 5 */}
-            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-full bg-[#064088] flex items-center justify-center mb-4">
-                <span className="text-white font-bold text-xl">5</span>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
-                Start class
-              </h3>
-              <p className="text-gray-700">
-                You join and speak every day.
-              </p>
-            </div>
+          <div className="text-center mb-8">
+            <p className="text-gray-700 font-medium">
+              Then you start class and speak every day.
+            </p>
           </div>
 
           <div className="text-center">
