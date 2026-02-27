@@ -734,7 +734,7 @@ function GreensboroPage() {
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
-                  <span className="text-lg text-gray-700">You live in Greensboro (or nearby).</span>
+                  <span className="text-lg text-gray-700">You are in Greensboro (or nearby).</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
