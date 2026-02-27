@@ -882,155 +882,250 @@ function GreensboroPage() {
         </div>
       </section>
 
-      {/* SECTION C: FAQ */}
-      <section className="bg-white py-16 md:py-24">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-              Common questions
-            </h2>
+{/* SECTION C: FAQ */}
+<section className="bg-white py-10 md:py-14">
+  <div className="max-w-4xl mx-auto px-4">
+    <div className="text-center mb-8">
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+        Common questions
+      </h2>
+      <p className="text-gray-700">
+        Simple answers. No confusing words.
+      </p>
+    </div>
+
+    <div className="space-y-3 mb-8">
+      {/* FAQ 1 */}
+      <div className="bg-gray-50 rounded-xl overflow-hidden border border-gray-200">
+        <button
+          onClick={() => toggleFAQ(1)}
+          className="w-full flex items-center justify-between p-5 text-left hover:bg-gray-100 transition-colors"
+        >
+          <span className="text-lg font-semibold text-gray-900">Where are classes?</span>
+          <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 1 ? 'rotate-180' : ''}`} />
+        </button>
+        {openFAQ === 1 && (
+          <div className="px-5 pb-5">
+            <p className="text-gray-700">On campus at UNCG in Greensboro.</p>
           </div>
+        )}
+      </div>
 
-          <div className="space-y-4 mb-12">
-            {/* FAQ 1 */}
-            <div className="bg-gray-50 rounded-xl overflow-hidden">
-              <button
-                onClick={() => toggleFAQ(1)}
-                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 transition-colors"
-              >
-                <span className="text-lg font-semibold text-gray-900">Where are classes?</span>
-                <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 1 ? 'rotate-180' : ''}`} />
-              </button>
-              {openFAQ === 1 && (
-                <div className="px-6 pb-6">
-                  <p className="text-gray-700">On campus at UNCG in Greensboro.</p>
-                </div>
-              )}
-            </div>
-
-            {/* FAQ 2 */}
-            <div className="bg-gray-50 rounded-xl overflow-hidden">
-              <button
-                onClick={() => toggleFAQ(2)}
-                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 transition-colors"
-              >
-                <span className="text-lg font-semibold text-gray-900">How often are classes?</span>
-                <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 2 ? 'rotate-180' : ''}`} />
-              </button>
-              {openFAQ === 2 && (
-                <div className="px-6 pb-6">
-                  <p className="text-gray-700">Monday to Friday. Choose 2 or 4 hours a day.</p>
-                </div>
-              )}
-            </div>
-
-            {/* FAQ 3 */}
-            <div className="bg-gray-50 rounded-xl overflow-hidden">
-              <button
-                onClick={() => toggleFAQ(3)}
-                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 transition-colors"
-              >
-                <span className="text-lg font-semibold text-gray-900">Do I need to be advanced?</span>
-                <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 3 ? 'rotate-180' : ''}`} />
-              </button>
-              {openFAQ === 3 && (
-                <div className="px-6 pb-6">
-                  <p className="text-gray-700">No. You take a placement test. We put you in the right level.</p>
-                </div>
-              )}
-            </div>
-
-            {/* FAQ 4 */}
-            <div className="bg-gray-50 rounded-xl overflow-hidden">
-              <button
-                onClick={() => toggleFAQ(4)}
-                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 transition-colors"
-              >
-                <span className="text-lg font-semibold text-gray-900">Will I be fluent in 5 weeks?</span>
-                <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 4 ? 'rotate-180' : ''}`} />
-              </button>
-              {openFAQ === 4 && (
-                <div className="px-6 pb-6">
-                  <p className="text-gray-700">No. But you can feel more confident and speak more after one term.</p>
-                </div>
-              )}
-            </div>
-
-            {/* FAQ 5 */}
-            <div className="bg-gray-50 rounded-xl overflow-hidden">
-              <button
-                onClick={() => toggleFAQ(5)}
-                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 transition-colors"
-              >
-                <span className="text-lg font-semibold text-gray-900">What happens after I apply?</span>
-                <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 5 ? 'rotate-180' : ''}`} />
-              </button>
-              {openFAQ === 5 && (
-                <div className="px-6 pb-6">
-                  <p className="text-gray-700">We review your application. An advisor helps you with next steps and placement.</p>
-                </div>
-              )}
-            </div>
-
-            {/* FAQ 6 */}
-            <div className="bg-gray-50 rounded-xl overflow-hidden">
-              <button
-                onClick={() => toggleFAQ(6)}
-                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 transition-colors"
-              >
-                <span className="text-lg font-semibold text-gray-900">Is this for casual learners?</span>
-                <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 6 ? 'rotate-180' : ''}`} />
-              </button>
-              {openFAQ === 6 && (
-                <div className="px-6 pb-6">
-                  <p className="text-gray-700">No. This is for serious students who will show up and speak.</p>
-                </div>
-              )}
-            </div>
-
-            {/* FAQ 7 */}
-            <div className="bg-gray-50 rounded-xl overflow-hidden">
-              <button
-                onClick={() => toggleFAQ(7)}
-                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 transition-colors"
-              >
-                <span className="text-lg font-semibold text-gray-900">How do I see dates and fees?</span>
-                <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 7 ? 'rotate-180' : ''}`} />
-              </button>
-              {openFAQ === 7 && (
-                <div className="px-6 pb-6">
-                  <p className="text-gray-700">Use the 'See dates & fees' button above.</p>
-                </div>
-              )}
-            </div>
-
-            {/* FAQ 8 */}
-            <div className="bg-gray-50 rounded-xl overflow-hidden">
-              <button
-                onClick={() => toggleFAQ(8)}
-                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 transition-colors"
-              >
-                <span className="text-lg font-semibold text-gray-900">How does the discount work?</span>
-                <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 8 ? 'rotate-180' : ''}`} />
-              </button>
-              {openFAQ === 8 && (
-                <div className="px-6 pb-6">
-                  <p className="text-gray-700">It is for qualified applicants applying to the closest available term.</p>
-                </div>
-              )}
-            </div>
+      {/* FAQ 2 */}
+      <div className="bg-gray-50 rounded-xl overflow-hidden border border-gray-200">
+        <button
+          onClick={() => toggleFAQ(2)}
+          className="w-full flex items-center justify-between p-5 text-left hover:bg-gray-100 transition-colors"
+        >
+          <span className="text-lg font-semibold text-gray-900">When are classes?</span>
+          <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 2 ? 'rotate-180' : ''}`} />
+        </button>
+        {openFAQ === 2 && (
+          <div className="px-5 pb-5">
+            <p className="text-gray-700">
+              Monday to Friday (Eastern Time).<br />
+              Reading &amp; Writing: 9:30–11:30 AM<br />
+              Communication Skills: 12:30–2:30 PM
+            </p>
           </div>
+        )}
+      </div>
 
-          <div className="text-center">
-            <button
-              onClick={scrollToApply}
-              className="bg-[#dc5d33] text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
-            >
-              Apply now
-            </button>
+      {/* FAQ 3 */}
+      <div className="bg-gray-50 rounded-xl overflow-hidden border border-gray-200">
+        <button
+          onClick={() => toggleFAQ(3)}
+          className="w-full flex items-center justify-between p-5 text-left hover:bg-gray-100 transition-colors"
+        >
+          <span className="text-lg font-semibold text-gray-900">What is part-time vs full-time?</span>
+          <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 3 ? 'rotate-180' : ''}`} />
+        </button>
+        {openFAQ === 3 && (
+          <div className="px-5 pb-5">
+            <p className="text-gray-700">
+              Full-time: 4 hours a day (both classes).<br />
+              Part-time: 2 hours a day (choose ONE class block).
+            </p>
           </div>
-        </div>
-      </section>
+        )}
+      </div>
+
+      {/* FAQ 4 */}
+      <div className="bg-gray-50 rounded-xl overflow-hidden border border-gray-200">
+        <button
+          onClick={() => toggleFAQ(4)}
+          className="w-full flex items-center justify-between p-5 text-left hover:bg-gray-100 transition-colors"
+        >
+          <span className="text-lg font-semibold text-gray-900">How much does it cost?</span>
+          <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 4 ? 'rotate-180' : ''}`} />
+        </button>
+        {openFAQ === 4 && (
+          <div className="px-5 pb-5">
+            <p className="text-gray-700">
+              Full-time: $1,700 per 5-week term.<br />
+              Part-time: $850 per 5-week term.
+            </p>
+          </div>
+        )}
+      </div>
+
+      {/* FAQ 5 */}
+      <div className="bg-gray-50 rounded-xl overflow-hidden border border-gray-200">
+        <button
+          onClick={() => toggleFAQ(5)}
+          className="w-full flex items-center justify-between p-5 text-left hover:bg-gray-100 transition-colors"
+        >
+          <span className="text-lg font-semibold text-gray-900">How does the Spring I discount work?</span>
+          <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 5 ? 'rotate-180' : ''}`} />
+        </button>
+        {openFAQ === 5 && (
+          <div className="px-5 pb-5">
+            <p className="text-gray-700">
+              Spring I is 20% off if you apply by March 18.<br />
+              Save up to $340 (full-time) or $170 (part-time).
+            </p>
+          </div>
+        )}
+      </div>
+
+      {/* FAQ 6 */}
+      <div className="bg-gray-50 rounded-xl overflow-hidden border border-gray-200">
+        <button
+          onClick={() => toggleFAQ(6)}
+          className="w-full flex items-center justify-between p-5 text-left hover:bg-gray-100 transition-colors"
+        >
+          <span className="text-lg font-semibold text-gray-900">What if I miss the deadline?</span>
+          <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 6 ? 'rotate-180' : ''}`} />
+        </button>
+        {openFAQ === 6 && (
+          <div className="px-5 pb-5">
+            <p className="text-gray-700">
+              Apply anyway. We will help you start as soon as possible.
+            </p>
+          </div>
+        )}
+      </div>
+
+      {/* FAQ 7 */}
+      <div className="bg-gray-50 rounded-xl overflow-hidden border border-gray-200">
+        <button
+          onClick={() => toggleFAQ(7)}
+          className="w-full flex items-center justify-between p-5 text-left hover:bg-gray-100 transition-colors"
+        >
+          <span className="text-lg font-semibold text-gray-900">Do I need to be advanced?</span>
+          <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 7 ? 'rotate-180' : ''}`} />
+        </button>
+        {openFAQ === 7 && (
+          <div className="px-5 pb-5">
+            <p className="text-gray-700">
+              You take a placement test. We put you in the right level.<br />
+              We start after beginner level.
+            </p>
+          </div>
+        )}
+      </div>
+
+      {/* FAQ 8 */}
+      <div className="bg-gray-50 rounded-xl overflow-hidden border border-gray-200">
+        <button
+          onClick={() => toggleFAQ(8)}
+          className="w-full flex items-center justify-between p-5 text-left hover:bg-gray-100 transition-colors"
+        >
+          <span className="text-lg font-semibold text-gray-900">How long does it take?</span>
+          <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 8 ? 'rotate-180' : ''}`} />
+        </button>
+        {openFAQ === 8 && (
+          <div className="px-5 pb-5">
+            <p className="text-gray-700">
+              Most students finish in about 4–12 months. It depends on your level and effort.
+            </p>
+          </div>
+        )}
+      </div>
+
+      {/* FAQ 9 */}
+      <div className="bg-gray-50 rounded-xl overflow-hidden border border-gray-200">
+        <button
+          onClick={() => toggleFAQ(9)}
+          className="w-full flex items-center justify-between p-5 text-left hover:bg-gray-100 transition-colors"
+        >
+          <span className="text-lg font-semibold text-gray-900">How big are classes?</span>
+          <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 9 ? 'rotate-180' : ''}`} />
+        </button>
+        {openFAQ === 9 && (
+          <div className="px-5 pb-5">
+            <p className="text-gray-700">
+              Classes are small so you get more speaking time. (Usually about 12–15 students.)
+            </p>
+          </div>
+        )}
+      </div>
+
+      {/* FAQ 10 */}
+      <div className="bg-gray-50 rounded-xl overflow-hidden border border-gray-200">
+        <button
+          onClick={() => toggleFAQ(10)}
+          className="w-full flex items-center justify-between p-5 text-left hover:bg-gray-100 transition-colors"
+        >
+          <span className="text-lg font-semibold text-gray-900">Is there homework?</span>
+          <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 10 ? 'rotate-180' : ''}`} />
+        </button>
+        {openFAQ === 10 && (
+          <div className="px-5 pb-5">
+            <p className="text-gray-700">
+              Yes. This is a serious program. You will have classwork and homework.
+            </p>
+          </div>
+        )}
+      </div>
+
+      {/* FAQ 11 */}
+      <div className="bg-gray-50 rounded-xl overflow-hidden border border-gray-200">
+        <button
+          onClick={() => toggleFAQ(11)}
+          className="w-full flex items-center justify-between p-5 text-left hover:bg-gray-100 transition-colors"
+        >
+          <span className="text-lg font-semibold text-gray-900">What happens after I apply?</span>
+          <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 11 ? 'rotate-180' : ''}`} />
+        </button>
+        {openFAQ === 11 && (
+          <div className="px-5 pb-5">
+            <p className="text-gray-700">
+              We review your application. An advisor helps you with next steps and your placement test.
+            </p>
+          </div>
+        )}
+      </div>
+
+      {/* FAQ 12 */}
+      <div className="bg-gray-50 rounded-xl overflow-hidden border border-gray-200">
+        <button
+          onClick={() => toggleFAQ(12)}
+          className="w-full flex items-center justify-between p-5 text-left hover:bg-gray-100 transition-colors"
+        >
+          <span className="text-lg font-semibold text-gray-900">Is this program for everyone?</span>
+          <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 12 ? 'rotate-180' : ''}`} />
+        </button>
+        {openFAQ === 12 && (
+          <div className="px-5 pb-5">
+            <p className="text-gray-700">
+              No. It is for serious students who will show up and speak in class.
+            </p>
+          </div>
+        )}
+      </div>
+    </div>
+
+    <div className="text-center">
+      <button
+        onClick={scrollToApply}
+        className="bg-[#dc5d33] text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
+      >
+        Apply now
+      </button>
+    </div>
+  </div>
+</section>
 
       {/* SECTION D: Bottom Apply Section */}
       <section id="apply" className="bg-gray-50 py-16 md:py-24">
