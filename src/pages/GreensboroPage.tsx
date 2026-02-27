@@ -632,56 +632,7 @@ function GreensboroPage() {
         </div>
       </section>
 
-      {/* Section 6: Next Intake */}
-      <section className="bg-white py-16 md:py-20">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 md:p-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-              {/* Left Column: Text */}
-              <div>
-                <p className="text-sm font-semibold text-[#064088] tracking-wide uppercase mb-3">
-                  NEXT INTAKE
-                </p>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                  Limited discount for the closest term.
-                </h2>
-                <div className="space-y-2">
-                  <p className="text-lg text-gray-700">
-                    New terms start often.
-                  </p>
-                  <p className="text-lg text-gray-700">
-                    To get the discount, apply for the closest available term.
-                  </p>
-                  <p className="text-lg text-gray-700">
-                    See the exact dates and fees on the official page.
-                  </p>
-                </div>
-              </div>
 
-              {/* Right Column: Buttons */}
-              <div className="flex flex-col gap-4">
-                <button
-                  onClick={scrollToApply}
-                  className="bg-[#dc5d33] text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5 w-full"
-                >
-                  Apply for the closest term
-                </button>
-                <a
-                  href="https://interlink.edu/university-programs/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="bg-white text-[#064088] border-2 border-[#064088] font-bold text-lg px-8 py-4 rounded-lg hover:bg-[#064088] hover:text-white transition-all duration-300 text-center"
-                >
-                  See dates & fees
-                </a>
-                <p className="text-sm text-gray-600 mt-2">
-                  Discount is for qualified applicants. Not everyone is accepted.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Section 7: Timeline - What Happens After You Apply */}
       <section className="bg-gray-50 py-16 md:py-24">
