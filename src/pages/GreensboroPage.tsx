@@ -427,6 +427,122 @@ function GreensboroPage() {
         </div>
       </section>
 
+      {/* Section 5.5: Dates and Deadlines */}
+      <section className="bg-white py-16 md:py-24">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Dates and deadlines
+            </h2>
+            <p className="text-lg text-gray-700">
+              Choose the term that works for you.
+            </p>
+          </div>
+
+          <div className="overflow-x-auto mb-8">
+            <table className="w-full border-collapse">
+              <thead>
+                <tr className="bg-gray-50 border-b-2 border-gray-300">
+                  <th className="px-6 py-4 text-left font-bold text-gray-900">Term</th>
+                  <th className="px-6 py-4 text-left font-bold text-gray-900">Dates</th>
+                  <th className="px-6 py-4 text-left font-bold text-gray-900">Apply by</th>
+                  <th className="px-6 py-4 text-left font-bold text-gray-900">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                {/* Spring I - Highlighted */}
+                <tr className="border-b border-gray-200 bg-red-50">
+                  <td className="px-6 py-4">
+                    <div className="flex items-center gap-3">
+                      <span className="font-bold text-gray-900">Spring I 2026</span>
+                      <span className="inline-block bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+                        20% OFF
+                      </span>
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 text-gray-700">Apr 1 – May 8</td>
+                  <td className="px-6 py-4 text-gray-700">March 18</td>
+                  <td className="px-6 py-4">
+                    <div className="font-bold text-gray-900">From $1,360 (full-time)</div>
+                    <div className="text-sm text-red-600 font-semibold">Save up to $340</div>
+                  </td>
+                </tr>
+
+                {/* Spring II */}
+                <tr className="border-b border-gray-200">
+                  <td className="px-6 py-4 font-bold text-gray-900">Spring II 2026</td>
+                  <td className="px-6 py-4 text-gray-700">May 12 – Jun 17</td>
+                  <td className="px-6 py-4 text-gray-700">April 28</td>
+                  <td className="px-6 py-4 text-gray-700">See dates & fees</td>
+                </tr>
+
+                {/* Summer */}
+                <tr className="border-b border-gray-200">
+                  <td className="px-6 py-4 font-bold text-gray-900">Summer 2026</td>
+                  <td className="px-6 py-4 text-gray-700">Jun 19 – Jul 28</td>
+                  <td className="px-6 py-4 text-gray-700">June 5</td>
+                  <td className="px-6 py-4 text-gray-700">See dates & fees</td>
+                </tr>
+
+                {/* Fall I */}
+                <tr className="border-b border-gray-200">
+                  <td className="px-6 py-4 font-bold text-gray-900">Fall I 2026</td>
+                  <td className="px-6 py-4 text-gray-700">Aug 17 – Sep 23</td>
+                  <td className="px-6 py-4 text-gray-700">August 3</td>
+                  <td className="px-6 py-4 text-gray-700">See dates & fees</td>
+                </tr>
+
+                {/* Fall II */}
+                <tr className="border-b border-gray-200">
+                  <td className="px-6 py-4 font-bold text-gray-900">Fall II 2026</td>
+                  <td className="px-6 py-4 text-gray-700">Sep 25 – Nov 3</td>
+                  <td className="px-6 py-4 text-gray-700">See dates & fees</td>
+                  <td className="px-6 py-4 text-gray-700">See dates & fees</td>
+                </tr>
+
+                {/* Fall III */}
+                <tr className="border-b border-gray-200">
+                  <td className="px-6 py-4 font-bold text-gray-900">Fall III 2026</td>
+                  <td className="px-6 py-4 text-gray-700">Nov 5 – Dec 16</td>
+                  <td className="px-6 py-4 text-gray-700">See dates & fees</td>
+                  <td className="px-6 py-4 text-gray-700">See dates & fees</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          {/* Pricing Note Box */}
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 md:p-8 mb-8">
+            <h3 className="font-bold text-gray-900 mb-3">Pricing</h3>
+            <div className="space-y-2 text-gray-700">
+              <p><span className="font-semibold">Full-time:</span> $1,700 / term (4 hours/day, Monday–Friday)</p>
+              <p><span className="font-semibold">Part-time:</span> $850 / term (2 hours/day, Monday–Friday)</p>
+              <p className="text-sm pt-2 border-t border-blue-200 mt-4">
+                <span className="font-semibold">Spring I discount:</span> Save $340 on full-time ($1,360) or $170 on part-time ($680). Apply by March 18.
+              </p>
+            </div>
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col md:flex-row gap-4">
+            <button
+              onClick={scrollToApply}
+              className="flex-1 bg-[#dc5d33] text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
+            >
+              Apply for Spring I
+            </button>
+            <a
+              href="https://interlink.edu/university-programs/"
+              target="_blank"
+              rel="noreferrer"
+              className="flex-1 bg-white text-[#064088] border-2 border-[#064088] font-bold text-lg px-8 py-4 rounded-lg hover:bg-[#064088] hover:text-white transition-all duration-300 text-center"
+            >
+              See all dates & fees
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Section 6: Next Intake */}
       <section className="bg-white py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-4">
