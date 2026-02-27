@@ -97,7 +97,7 @@ function GreensboroPage() {
       <GreensboroHero />
 
 {/* Section 2: Credibility Strip */}
-<section className="bg-gray-2000 py-0 md:py-0">
+<section className="bg-gray-50 py-0 md:py-0">
   <div className="max-w-6xl mx-auto px-4">
     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 text-center items-stretch">
       <div className="flex flex-col items-center justify-center gap-2 min-h-[80px] md:min-h-[90px]">
@@ -880,6 +880,117 @@ function GreensboroPage() {
         </div>
       </section>
 
+
+            {/* SECTION D: Bottom Apply Section */}
+      <section id="apply" className="bg-gray-50 py-10 md:py-14">
+        <div className="max-w-2xl mx-auto px-4">
+          <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
+            {!formSubmitted ? (
+              <>
+                <div className="text-center mb-5">
+                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+                    Apply in minutes
+                  </h2>
+                  <p className="text-base text-gray-700">
+                    If you are serious, start here.
+                  </p>
+                </div>
+
+                <form onSubmit={handleFormSubmit} className="space-y-4">
+                  <div>
+                    <label htmlFor="firstName" className="block text-sm font-semibold text-gray-900 mb-1">
+                      First name <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      value={formData.firstName}
+                      onChange={handleInputChange}
+                      required
+                      className="w-full px-3 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064088] focus:border-transparent text-sm"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-semibold text-gray-900 mb-1">
+                      Email <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      required
+                      className="w-full px-3 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064088] focus:border-transparent text-sm"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="commitment" className="block text-sm font-semibold text-gray-900 mb-1">
+                      Are you willing to commit and take learning English seriously? <span className="text-red-500">*</span>
+                    </label>
+                    <select
+                      id="commitment"
+                      name="commitment"
+                      value={formData.commitment}
+                      onChange={handleInputChange}
+                      required
+                      className="w-full px-3 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064088] focus:border-transparent text-sm"
+                    >
+                      <option value="">Select an option</option>
+                      <option value="yes">Yes, I will show up</option>
+                      <option value="maybe">I have questions first</option>
+                      <option value="not-now">No</option>
+                    </select>
+                  </div>
+
+                  <button
+                    type="submit"
+                    className="w-full bg-[#dc5d33] text-white font-bold text-base px-6 py-3 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
+                  >
+                    Continue to official application
+                  </button>
+                </form>
+
+                <div className="mt-5 pt-4 border-t border-gray-200 text-center space-y-1">
+                  <p className="text-xs text-gray-600">
+                    We review every application.
+                  </p>
+                  <p className="text-xs text-gray-600">
+                    Not everyone is accepted.
+                  </p>
+                </div>
+              </>
+            ) : (
+              <div className="text-center">
+                <div className="mb-4">
+                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <Check className="w-6 h-6 text-green-600" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    Thank you!
+                  </h3>
+                  <p className="text-base text-gray-700 mb-4">
+                    Now complete your official application.
+                  </p>
+                </div>
+                <a
+                  href={APPLICATION_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-block bg-[#dc5d33] text-white font-bold text-base px-6 py-3 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
+                >
+                  Begin official application
+                </a>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
+
+      
 {/* SECTION C: FAQ */}
 <section className="bg-white py-8 md:py-10">
   <div className="max-w-4xl mx-auto px-4">
@@ -1125,114 +1236,7 @@ function GreensboroPage() {
   </div>
 </section>
 
-      {/* SECTION D: Bottom Apply Section */}
-      <section id="apply" className="bg-gray-50 py-10 md:py-14">
-        <div className="max-w-2xl mx-auto px-4">
-          <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
-            {!formSubmitted ? (
-              <>
-                <div className="text-center mb-5">
-                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-                    Apply in minutes
-                  </h2>
-                  <p className="text-base text-gray-700">
-                    If you are serious, start here.
-                  </p>
-                </div>
 
-                <form onSubmit={handleFormSubmit} className="space-y-4">
-                  <div>
-                    <label htmlFor="firstName" className="block text-sm font-semibold text-gray-900 mb-1">
-                      First name <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      id="firstName"
-                      name="firstName"
-                      value={formData.firstName}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-3 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064088] focus:border-transparent text-sm"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-semibold text-gray-900 mb-1">
-                      Email <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-3 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064088] focus:border-transparent text-sm"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="commitment" className="block text-sm font-semibold text-gray-900 mb-1">
-                      Are you willing to commit and take learning English seriously? <span className="text-red-500">*</span>
-                    </label>
-                    <select
-                      id="commitment"
-                      name="commitment"
-                      value={formData.commitment}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-3 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064088] focus:border-transparent text-sm"
-                    >
-                      <option value="">Select an option</option>
-                      <option value="yes">Yes, I will show up</option>
-                      <option value="maybe">I have questions first</option>
-                      <option value="not-now">No</option>
-                    </select>
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="w-full bg-[#dc5d33] text-white font-bold text-base px-6 py-3 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
-                  >
-                    Continue to official application
-                  </button>
-                </form>
-
-                <div className="mt-5 pt-4 border-t border-gray-200 text-center space-y-1">
-                  <p className="text-xs text-gray-600">
-                    We review every application.
-                  </p>
-                  <p className="text-xs text-gray-600">
-                    Not everyone is accepted.
-                  </p>
-                </div>
-              </>
-            ) : (
-              <div className="text-center">
-                <div className="mb-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <Check className="w-6 h-6 text-green-600" />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    Thank you!
-                  </h3>
-                  <p className="text-base text-gray-700 mb-4">
-                    Now complete your official application.
-                  </p>
-                </div>
-                <a
-                  href={APPLICATION_URL}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-block bg-[#dc5d33] text-white font-bold text-base px-6 py-3 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
-                >
-                  Begin official application
-                </a>
-              </div>
-            )}
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
