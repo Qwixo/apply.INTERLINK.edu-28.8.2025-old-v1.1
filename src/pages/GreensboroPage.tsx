@@ -96,29 +96,40 @@ function GreensboroPage() {
       )}
       <GreensboroHero />
 
-      {/* Section 2: Credibility Strip */}
-      <section className="bg-gray-50 py-12 md:py-16">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-            <div className="flex flex-col items-center gap-3">
-              <Calendar className="w-10 h-10 text-[#064088]" />
-              <p className="text-lg font-semibold text-gray-900">Helping since 1979</p>
-            </div>
-            <div className="flex flex-col items-center gap-3">
-              <Users className="w-10 h-10 text-[#064088]" />
-              <p className="text-lg font-semibold text-gray-900">Thousands of students</p>
-            </div>
-            <div className="flex flex-col items-center gap-3">
-              <Globe className="w-10 h-10 text-[#064088]" />
-              <p className="text-lg font-semibold text-gray-900">70+ countries</p>
-            </div>
-            <div className="flex flex-col items-center gap-3">
-              <MapPin className="w-10 h-10 text-[#064088]" />
-              <p className="text-lg font-semibold text-gray-900">On-campus at UNCG (Greensboro)</p>
-            </div>
-          </div>
-        </div>
-      </section>
+{/* Section 2: Credibility Strip */}
+<section className="bg-gray-50 py-12 md:py-16">
+  <div className="max-w-6xl mx-auto px-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center items-stretch">
+      <div className="flex flex-col items-center justify-center gap-3 min-h-[120px]">
+        <Calendar className="w-10 h-10 text-[#064088]" />
+        <p className="text-lg font-semibold text-gray-900 leading-tight">
+          Helping since 1979
+        </p>
+      </div>
+
+      <div className="flex flex-col items-center justify-center gap-3 min-h-[120px]">
+        <Users className="w-10 h-10 text-[#064088]" />
+        <p className="text-lg font-semibold text-gray-900 leading-tight">
+          Thousands of students
+        </p>
+      </div>
+
+      <div className="flex flex-col items-center justify-center gap-3 min-h-[120px]">
+        <Globe className="w-10 h-10 text-[#064088]" />
+        <p className="text-lg font-semibold text-gray-900 leading-tight">
+          70+ countries
+        </p>
+      </div>
+
+      <div className="flex flex-col items-center justify-center gap-3 min-h-[120px]">
+        <MapPin className="w-10 h-10 text-[#064088]" />
+        <p className="text-lg font-semibold text-gray-900 leading-tight">
+          On-campus at UNCG (Greensboro)
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Section 3: Pain Block */}
       <section className="bg-gray-50 py-16 md:py-20">
