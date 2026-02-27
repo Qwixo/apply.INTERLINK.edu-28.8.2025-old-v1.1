@@ -1230,7 +1230,7 @@ function GreensboroPage() {
         onClick={scrollToApply}
         className="bg-[#dc5d33] text-white font-bold text-base px-6 py-3 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
       >
-        Apply now
+        Last Chance
       </button>
     </div>
   </div>
