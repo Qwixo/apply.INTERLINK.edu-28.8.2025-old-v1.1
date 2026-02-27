@@ -68,9 +68,9 @@ function GreensboroPage() {
       <GreensboroHero />
 
       {/* Section 2: Credibility Strip */}
-      <section className="bg-gray-50 py-3 md:py-4">
+      <section className="bg-gray-50 py-12 md:py-16">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div className="flex flex-col items-center gap-3">
               <Calendar className="w-10 h-10 text-[#064088]" />
               <p className="text-lg font-semibold text-gray-900">Helping since 1979</p>
@@ -92,16 +92,16 @@ function GreensboroPage() {
       </section>
 
       {/* Section 3: Pain Block */}
-      <section className="bg-gradient-to-b from-white to-gray-50 py-3 md:py-4">
+      <section className="bg-gradient-to-b from-white to-gray-50 py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
               English feels hard in real life.
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
               {/* Card 1 */}
-              <div className="bg-white rounded-2xl p-5 shadow-sm hover:shadow-md transition-all border-l-4 border-[#dc5d33]">
+              <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all border-l-4 border-[#dc5d33]">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0">
                     <MessageSquare className="w-5 h-5 text-[#dc5d33]" />
@@ -113,7 +113,7 @@ function GreensboroPage() {
               </div>
 
               {/* Card 2 */}
-              <div className="bg-white rounded-2xl p-5 shadow-sm hover:shadow-md transition-all border-l-4 border-[#dc5d33]">
+              <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all border-l-4 border-[#dc5d33]">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0">
                     <Users className="w-5 h-5 text-[#dc5d33]" />
@@ -125,7 +125,7 @@ function GreensboroPage() {
               </div>
 
               {/* Card 3 */}
-              <div className="bg-white rounded-2xl p-5 shadow-sm hover:shadow-md transition-all border-l-4 border-[#dc5d33]">
+              <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all border-l-4 border-[#dc5d33]">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0">
                     <HelpCircle className="w-5 h-5 text-[#dc5d33]" />
@@ -137,7 +137,7 @@ function GreensboroPage() {
               </div>
 
               {/* Card 4 */}
-              <div className="bg-white rounded-2xl p-5 shadow-sm hover:shadow-md transition-all border-l-4 border-[#dc5d33]">
+              <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all border-l-4 border-[#dc5d33]">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0">
                     <Lightbulb className="w-5 h-5 text-[#dc5d33]" />
@@ -149,7 +149,7 @@ function GreensboroPage() {
               </div>
             </div>
 
-            <div className="text-center bg-[#064088] rounded-2xl p-5">
+            <div className="text-center bg-[#064088] rounded-2xl p-8 md:p-10">
               <p className="text-xl md:text-2xl text-white font-medium">
                 It's not because you are not smart.
               </p>
@@ -162,21 +162,21 @@ function GreensboroPage() {
       </section>
 
       {/* Section 4.5: The Real Secret - Daily Practice */}
-      <section className="bg-gray-100 py-3 md:py-4">
+      <section className="bg-gray-100 py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="bg-white rounded-2xl shadow-lg p-5">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+          <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
               {/* Left Column: Content */}
               <div>
                 <div className="text-xs md:text-sm uppercase tracking-widest text-[#dc5d33] font-bold mb-4">
                   THE REAL SECRET
                 </div>
 
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                   More practice. Every day.
                 </h2>
 
-                <div className="space-y-3 mb-4">
+                <div className="space-y-3 mb-8">
                   <p className="text-lg text-gray-700">
                     Apps and YouTube can teach rules.
                   </p>
@@ -197,7 +197,7 @@ function GreensboroPage() {
               </div>
 
               {/* Right Column: Mini Bullets */}
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-6">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
                     <Check className="w-6 h-6 text-white" strokeWidth={3} />
@@ -225,10 +225,10 @@ function GreensboroPage() {
       </section>
 
       {/* Section 5: What You Will Do In Class */}
-      <section className="bg-white py-3 md:py-4">
+      <section className="bg-white py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-3">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+          <div className="text-center mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               What you will do in class
             </h2>
             <p className="text-lg md:text-xl text-gray-700">
@@ -236,9 +236,9 @@ function GreensboroPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 max-w-6xl mx-auto mt-3 mb-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mt-12 mb-8">
             {/* Card 1 */}
-            <div className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
               <div className="flex justify-center mb-4">
                 <Users className="w-10 h-10 text-[#064088]" />
               </div>
@@ -251,7 +251,7 @@ function GreensboroPage() {
             </div>
 
             {/* Card 2 */}
-            <div className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
               <div className="flex justify-center mb-4">
                 <Presentation className="w-10 h-10 text-[#064088]" />
               </div>
@@ -264,7 +264,7 @@ function GreensboroPage() {
             </div>
 
             {/* Card 3 */}
-            <div className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
               <div className="flex justify-center mb-4">
                 <HelpCircle className="w-10 h-10 text-[#064088]" />
               </div>
@@ -277,7 +277,7 @@ function GreensboroPage() {
             </div>
 
             {/* Card 4 */}
-            <div className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
               <div className="flex justify-center mb-4">
                 <Lightbulb className="w-10 h-10 text-[#064088]" />
               </div>
@@ -290,7 +290,7 @@ function GreensboroPage() {
             </div>
 
             {/* Card 5 */}
-            <div className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
               <div className="flex justify-center mb-4">
                 <BookOpen className="w-10 h-10 text-[#064088]" />
               </div>
@@ -304,7 +304,7 @@ function GreensboroPage() {
           </div>
 
           {/* CTA Button */}
-          <div className="text-center mt-3">
+          <div className="text-center mt-12">
             <button
               onClick={scrollToApply}
               className="bg-[#dc5d33] text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
@@ -318,14 +318,14 @@ function GreensboroPage() {
       <TestimonialsSection guideStyle />
 
       {/* Section 5: Intensive Practice */}
-      <section className="bg-gray-50 py-3 md:py-4">
+      <section className="bg-gray-50 py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="bg-white rounded-2xl shadow-sm p-5">
-            <div className="text-center mb-3">
+          <div className="bg-white rounded-2xl shadow-sm p-8 md:p-12">
+            <div className="text-center mb-8">
               <p className="text-sm font-semibold text-[#064088] tracking-wide uppercase mb-3">
                 INTENSIVE PRACTICE
               </p>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 5 days a week. Real speaking practice.
               </h2>
               <div className="max-w-2xl mx-auto space-y-2">
@@ -338,9 +338,9 @@ function GreensboroPage() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-3xl mx-auto mb-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-6">
               {/* Part-time Card */}
-              <div className="border-2 border-gray-200 rounded-xl p-4 hover:border-[#064088] transition-colors">
+              <div className="border-2 border-gray-200 rounded-xl p-6 hover:border-[#064088] transition-colors">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   Part-time
                 </h3>
@@ -350,7 +350,7 @@ function GreensboroPage() {
               </div>
 
               {/* Full-time Card */}
-              <div className="border-2 border-gray-200 rounded-xl p-4 hover:border-[#064088] transition-colors">
+              <div className="border-2 border-gray-200 rounded-xl p-6 hover:border-[#064088] transition-colors">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   Full-time
                 </h3>
@@ -360,7 +360,7 @@ function GreensboroPage() {
               </div>
             </div>
 
-            <p className="text-center text-gray-600 mb-3">
+            <p className="text-center text-gray-600 mb-8">
               Choose the pace that fits your life. You still practice a lot.
             </p>
 
@@ -377,16 +377,16 @@ function GreensboroPage() {
       </section>
 
       {/* Section 6: Next Intake */}
-      <section className="bg-white py-3 md:py-4">
+      <section className="bg-white py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-5">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 md:p-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
               {/* Left Column: Text */}
               <div>
                 <p className="text-sm font-semibold text-[#064088] tracking-wide uppercase mb-3">
                   NEXT INTAKE
                 </p>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                   Limited discount for the closest term.
                 </h2>
                 <div className="space-y-2">
@@ -428,9 +428,9 @@ function GreensboroPage() {
       </section>
 
       {/* Section 7: Timeline - What Happens After You Apply */}
-      <section className="bg-gray-50 py-3 md:py-4">
+      <section className="bg-gray-50 py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-3">
+          <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
               What happens after you apply
             </h2>
@@ -439,9 +439,9 @@ function GreensboroPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3 mb-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
             {/* Step 1 */}
-            <div className="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="w-12 h-12 rounded-full bg-[#064088] flex items-center justify-center mb-4">
                 <span className="text-white font-bold text-xl">1</span>
               </div>
@@ -454,7 +454,7 @@ function GreensboroPage() {
             </div>
 
             {/* Step 2 */}
-            <div className="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="w-12 h-12 rounded-full bg-[#064088] flex items-center justify-center mb-4">
                 <span className="text-white font-bold text-xl">2</span>
               </div>
@@ -467,7 +467,7 @@ function GreensboroPage() {
             </div>
 
             {/* Step 3 */}
-            <div className="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="w-12 h-12 rounded-full bg-[#064088] flex items-center justify-center mb-4">
                 <span className="text-white font-bold text-xl">3</span>
               </div>
@@ -480,7 +480,7 @@ function GreensboroPage() {
             </div>
 
             {/* Step 4 */}
-            <div className="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="w-12 h-12 rounded-full bg-[#064088] flex items-center justify-center mb-4">
                 <span className="text-white font-bold text-xl">4</span>
               </div>
@@ -493,7 +493,7 @@ function GreensboroPage() {
             </div>
 
             {/* Step 5 */}
-            <div className="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="w-12 h-12 rounded-full bg-[#064088] flex items-center justify-center mb-4">
                 <span className="text-white font-bold text-xl">5</span>
               </div>
@@ -518,21 +518,21 @@ function GreensboroPage() {
       </section>
 
       {/* SECTION A: Is this for you? */}
-      <section className="bg-white py-3 md:py-4">
+      <section className="bg-white py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-3">
+          <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
               Is this for you?
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             {/* Card 1: This IS for you if... */}
-            <div className="bg-white rounded-2xl p-5 shadow-md border-2 border-green-500">
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">
+            <div className="bg-white rounded-2xl p-8 shadow-md border-2 border-green-500">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">
                 This IS for you if…
               </h3>
-              <ul className="space-y-3">
+              <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
                   <span className="text-lg text-gray-700">You live in Greensboro (or nearby).</span>
@@ -553,11 +553,11 @@ function GreensboroPage() {
             </div>
 
             {/* Card 2: This is NOT for you if... */}
-            <div className="bg-white rounded-2xl p-5 shadow-md border-2 border-red-500">
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">
+            <div className="bg-white rounded-2xl p-8 shadow-md border-2 border-red-500">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">
                 This is NOT for you if…
               </h3>
-              <ul className="space-y-3">
+              <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <span className="text-2xl text-red-600 flex-shrink-0">×</span>
                   <span className="text-lg text-gray-700">You want something easy or passive.</span>
@@ -590,9 +590,9 @@ function GreensboroPage() {
       </section>
 
       {/* SECTION B: Decision block */}
-      <section className="bg-gray-100 py-3 md:py-4">
+      <section className="bg-gray-100 py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-3">
+          <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
               Make a decision
             </h2>
@@ -601,13 +601,13 @@ function GreensboroPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Left option: Keep doing free learning */}
-            <div className="bg-white rounded-2xl p-5 shadow-md">
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">
+            <div className="bg-white rounded-2xl p-8 shadow-md">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Keep doing free learning
               </h3>
-              <p className="text-lg text-gray-700 mb-3">
+              <p className="text-lg text-gray-700 mb-6">
                 Watch videos and hope it clicks.
               </p>
               <a
@@ -621,11 +621,11 @@ function GreensboroPage() {
             </div>
 
             {/* Right option: Commit to real practice */}
-            <div className="bg-[#064088] rounded-2xl p-5 shadow-lg">
-              <h3 className="text-2xl font-bold text-white mb-3">
+            <div className="bg-[#064088] rounded-2xl p-8 shadow-lg">
+              <h3 className="text-2xl font-bold text-white mb-4">
                 Commit to real practice
               </h3>
-              <p className="text-lg text-white mb-3">
+              <p className="text-lg text-white mb-6">
                 Live classes. You speak every day.
               </p>
               <button
@@ -640,26 +640,26 @@ function GreensboroPage() {
       </section>
 
       {/* SECTION C: FAQ */}
-      <section className="bg-white py-3 md:py-4">
+      <section className="bg-white py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center mb-3">
+          <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
               Common questions
             </h2>
           </div>
 
-          <div className="space-y-3 mb-3">
+          <div className="space-y-4 mb-12">
             {/* FAQ 1 */}
             <div className="bg-gray-50 rounded-xl overflow-hidden">
               <button
                 onClick={() => toggleFAQ(1)}
-                className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-100 transition-colors"
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 transition-colors"
               >
                 <span className="text-lg font-semibold text-gray-900">Where are classes?</span>
                 <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 1 ? 'rotate-180' : ''}`} />
               </button>
               {openFAQ === 1 && (
-                <div className="px-4 pb-4">
+                <div className="px-6 pb-6">
                   <p className="text-gray-700">On campus at UNCG in Greensboro.</p>
                 </div>
               )}
@@ -669,13 +669,13 @@ function GreensboroPage() {
             <div className="bg-gray-50 rounded-xl overflow-hidden">
               <button
                 onClick={() => toggleFAQ(2)}
-                className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-100 transition-colors"
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 transition-colors"
               >
                 <span className="text-lg font-semibold text-gray-900">How often are classes?</span>
                 <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 2 ? 'rotate-180' : ''}`} />
               </button>
               {openFAQ === 2 && (
-                <div className="px-4 pb-4">
+                <div className="px-6 pb-6">
                   <p className="text-gray-700">Monday to Friday. Choose 2 or 4 hours a day.</p>
                 </div>
               )}
@@ -685,13 +685,13 @@ function GreensboroPage() {
             <div className="bg-gray-50 rounded-xl overflow-hidden">
               <button
                 onClick={() => toggleFAQ(3)}
-                className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-100 transition-colors"
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 transition-colors"
               >
                 <span className="text-lg font-semibold text-gray-900">Do I need to be advanced?</span>
                 <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 3 ? 'rotate-180' : ''}`} />
               </button>
               {openFAQ === 3 && (
-                <div className="px-4 pb-4">
+                <div className="px-6 pb-6">
                   <p className="text-gray-700">No. You take a placement test. We put you in the right level.</p>
                 </div>
               )}
@@ -701,13 +701,13 @@ function GreensboroPage() {
             <div className="bg-gray-50 rounded-xl overflow-hidden">
               <button
                 onClick={() => toggleFAQ(4)}
-                className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-100 transition-colors"
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 transition-colors"
               >
                 <span className="text-lg font-semibold text-gray-900">Will I be fluent in 5 weeks?</span>
                 <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 4 ? 'rotate-180' : ''}`} />
               </button>
               {openFAQ === 4 && (
-                <div className="px-4 pb-4">
+                <div className="px-6 pb-6">
                   <p className="text-gray-700">No. But you can feel more confident and speak more after one term.</p>
                 </div>
               )}
@@ -717,13 +717,13 @@ function GreensboroPage() {
             <div className="bg-gray-50 rounded-xl overflow-hidden">
               <button
                 onClick={() => toggleFAQ(5)}
-                className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-100 transition-colors"
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 transition-colors"
               >
                 <span className="text-lg font-semibold text-gray-900">What happens after I apply?</span>
                 <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 5 ? 'rotate-180' : ''}`} />
               </button>
               {openFAQ === 5 && (
-                <div className="px-4 pb-4">
+                <div className="px-6 pb-6">
                   <p className="text-gray-700">We review your application. An advisor helps you with next steps and placement.</p>
                 </div>
               )}
@@ -733,13 +733,13 @@ function GreensboroPage() {
             <div className="bg-gray-50 rounded-xl overflow-hidden">
               <button
                 onClick={() => toggleFAQ(6)}
-                className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-100 transition-colors"
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 transition-colors"
               >
                 <span className="text-lg font-semibold text-gray-900">Is this for casual learners?</span>
                 <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 6 ? 'rotate-180' : ''}`} />
               </button>
               {openFAQ === 6 && (
-                <div className="px-4 pb-4">
+                <div className="px-6 pb-6">
                   <p className="text-gray-700">No. This is for serious students who will show up and speak.</p>
                 </div>
               )}
@@ -749,13 +749,13 @@ function GreensboroPage() {
             <div className="bg-gray-50 rounded-xl overflow-hidden">
               <button
                 onClick={() => toggleFAQ(7)}
-                className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-100 transition-colors"
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 transition-colors"
               >
                 <span className="text-lg font-semibold text-gray-900">How do I see dates and fees?</span>
                 <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 7 ? 'rotate-180' : ''}`} />
               </button>
               {openFAQ === 7 && (
-                <div className="px-4 pb-4">
+                <div className="px-6 pb-6">
                   <p className="text-gray-700">Use the 'See dates & fees' button above.</p>
                 </div>
               )}
@@ -765,13 +765,13 @@ function GreensboroPage() {
             <div className="bg-gray-50 rounded-xl overflow-hidden">
               <button
                 onClick={() => toggleFAQ(8)}
-                className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-100 transition-colors"
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 transition-colors"
               >
                 <span className="text-lg font-semibold text-gray-900">How does the discount work?</span>
                 <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 8 ? 'rotate-180' : ''}`} />
               </button>
               {openFAQ === 8 && (
-                <div className="px-4 pb-4">
+                <div className="px-6 pb-6">
                   <p className="text-gray-700">It is for qualified applicants applying to the closest available term.</p>
                 </div>
               )}
@@ -790,12 +790,12 @@ function GreensboroPage() {
       </section>
 
       {/* SECTION D: Bottom Apply Section */}
-      <section id="apply" className="bg-gray-50 py-3 md:py-4">
+      <section id="apply" className="bg-gray-50 py-16 md:py-24">
         <div className="max-w-2xl mx-auto px-4">
-          <div className="bg-white rounded-2xl shadow-lg p-5">
+          <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
             {!formSubmitted ? (
               <>
-                <div className="text-center mb-3">
+                <div className="text-center mb-8">
                   <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
                     Apply in minutes
                   </h2>
@@ -804,7 +804,7 @@ function GreensboroPage() {
                   </p>
                 </div>
 
-                <form onSubmit={handleFormSubmit} className="space-y-3">
+                <form onSubmit={handleFormSubmit} className="space-y-6">
                   <div>
                     <label htmlFor="firstName" className="block text-sm font-semibold text-gray-900 mb-2">
                       First name <span className="text-red-500">*</span>
@@ -862,7 +862,7 @@ function GreensboroPage() {
                   </button>
                 </form>
 
-                <div className="mt-3 pt-3 border-t border-gray-200 text-center space-y-2">
+                <div className="mt-8 pt-6 border-t border-gray-200 text-center space-y-2">
                   <p className="text-sm text-gray-600">
                     We review every application.
                   </p>
@@ -873,14 +873,14 @@ function GreensboroPage() {
               </>
             ) : (
               <div className="text-center">
-                <div className="mb-3">
+                <div className="mb-6">
                   <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Check className="w-8 h-8 text-green-600" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">
                     Thank you!
                   </h3>
-                  <p className="text-lg text-gray-700 mb-3">
+                  <p className="text-lg text-gray-700 mb-6">
                     Now complete your official application.
                   </p>
                 </div>
