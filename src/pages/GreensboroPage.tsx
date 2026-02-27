@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import GreensboroHero from '../components/GreensboroHero';
 import TestimonialsSection from '../components/TestimonialsSection';
-import { Users, Globe, Calendar, MapPin, User, MessageSquare, Presentation, HelpCircle, BookOpen, Lightbulb, Check, ChevronDown, X } from 'lucide-react';
+import { Users, Globe, Calendar, MapPin, User, MessageSquare, Presentation, HelpCircle, BookOpen, Lightbulb, Check, ChevronDown, X, Film } from 'lucide-react';
 
 const APPLICATION_URL = "https://interlink.edu/student-application/";
 
@@ -316,6 +316,19 @@ function GreensboroPage() {
               </h3>
               <p className="text-gray-700 text-center text-sm">
                 Short tasks connected to real topics.
+              </p>
+            </div>
+
+            {/* Card 6 */}
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
+              <div className="flex justify-center mb-4">
+                <Film className="w-10 h-10 text-[#064088]" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2 text-center">
+                Video projects
+              </h3>
+              <p className="text-gray-700 text-center text-sm">
+                Create videos in groups. Fun, creative, real practice.
               </p>
             </div>
           </div>
