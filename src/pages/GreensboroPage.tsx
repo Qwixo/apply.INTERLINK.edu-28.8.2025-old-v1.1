@@ -667,7 +667,7 @@ function GreensboroPage() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-lg font-bold text-gray-900 mb-1">
-                    Fill in and submit application
+                    Fill in the application
                   </h3>
                   <p className="text-gray-700">
                     Send your application and your supporting documents.
