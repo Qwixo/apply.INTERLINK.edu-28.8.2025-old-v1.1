@@ -352,30 +352,51 @@ function GreensboroPage() {
                 <p className="text-lg text-gray-700">
                   Here, you practice speaking every day.
                 </p>
+                <p className="text-sm text-gray-600 mt-3 font-medium">
+                  Class times (Eastern Time)
+                </p>
               </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-6">
               {/* Part-time Card */}
               <div className="border-2 border-gray-200 rounded-xl p-6 hover:border-[#064088] transition-colors">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
                   Part-time
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 font-medium mb-3">
                   2 hours a day • Monday–Friday
                 </p>
+                <p className="text-sm text-gray-600 mb-2 font-medium">
+                  Choose ONE block:
+                </p>
+                <div className="space-y-2 text-sm text-gray-700">
+                  <p>• 9:30–11:30 AM (Reading & Writing)</p>
+                  <p>• 12:30–2:30 PM (Communication Skills)</p>
+                </div>
               </div>
 
               {/* Full-time Card */}
               <div className="border-2 border-gray-200 rounded-xl p-6 hover:border-[#064088] transition-colors">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
                   Full-time
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 font-medium mb-3">
                   4 hours a day • Monday–Friday
                 </p>
+                <p className="text-sm text-gray-600 mb-2 font-medium">
+                  Both blocks every day:
+                </p>
+                <div className="space-y-2 text-sm text-gray-700">
+                  <p>• 9:30–11:30 AM (Reading & Writing)</p>
+                  <p>• 12:30–2:30 PM (Communication Skills)</p>
+                </div>
               </div>
             </div>
+
+            <p className="text-center text-gray-500 text-sm mb-8">
+              Times are Eastern Time.
+            </p>
 
             <p className="text-center text-gray-600 mb-8">
               Choose the pace that fits your life. You still practice a lot.
