@@ -10,7 +10,7 @@ const GreensboroHero = () => {
   };
 
   return (
-    <section className="bg-white">
+    <section className="bg-white pt-8 md:pt-12 pb-10 md:pb-12">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center max-w-4xl mx-auto">
           {/* Kicker */}
@@ -18,7 +18,7 @@ const GreensboroHero = () => {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-sm md:text-base uppercase tracking-wider text-[#064088] font-medium mb-4"
+            className="text-sm md:text-base uppercase tracking-wider text-[#064088] font-medium mb-3"
           >
             On-campus at UNCG • Greensboro
           </motion.div>
@@ -28,7 +28,7 @@ const GreensboroHero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+            className="text-4xl md:text-5xl font-bold text-gray-900 mb-4"
           >
             Speak English with confidence faster.
           </motion.h1>
@@ -38,7 +38,7 @@ const GreensboroHero = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl md:text-2xl text-gray-700 mb-12 max-w-3xl mx-auto"
+            className="text-xl md:text-2xl text-gray-700 mb-6 max-w-3xl mx-auto"
           >
             Live classes. You speak every day. Small groups. Fast progress.
           </motion.p>
@@ -48,7 +48,7 @@ const GreensboroHero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="mb-10"
+            className="mb-6"
           >
             <div className="relative w-full max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-lg" style={{ paddingBottom: '56.25%' }}>
               <iframe
@@ -67,7 +67,7 @@ const GreensboroHero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
-            className="flex flex-col items-center gap-4"
+            className="flex flex-col items-center gap-3"
           >
             <button
               onClick={handleCTAClick}
