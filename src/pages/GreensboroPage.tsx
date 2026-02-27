@@ -339,7 +339,7 @@ function GreensboroPage() {
                 Video projects
               </h3>
               <p className="text-gray-700 text-center text-sm">
-                Create videos in groups and other fun creative activities.
+                Create videos in groups and other fun  activities.
               </p>
             </div>
           </div>
