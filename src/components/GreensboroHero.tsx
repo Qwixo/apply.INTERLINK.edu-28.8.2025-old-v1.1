@@ -10,8 +10,8 @@ const GreensboroHero = () => {
   };
 
   return (
-    <section className="bg-white">
-      <div className="max-w-6xl mx-auto px-4">
+    <section className="bg-white pt-3">
+      <div className="max-w-6xl mx-auto px-4 pb-3">
         <div className="text-center max-w-4xl mx-auto">
           {/* Kicker */}
           <motion.div

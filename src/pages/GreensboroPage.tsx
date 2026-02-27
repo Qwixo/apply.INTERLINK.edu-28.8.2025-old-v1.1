@@ -78,10 +78,10 @@ function GreensboroPage() {
       {showBanner && (
         <div
           onClick={handleBannerClick}
-          className="sticky top-0 z-50 w-full bg-red-600 text-white cursor-pointer py-2 px-4 group"
+          className="sticky top-0 z-50 w-full bg-red-600 text-white cursor-pointer py-1 px-4 group"
         >
           <div className="max-w-7xl mx-auto flex items-center justify-center relative">
-            <p className="text-xs md:text-sm leading-tight text-center group-hover:underline">
+            <p className="text-xs leading-tight text-center group-hover:underline">
               Save up to $340 on Spring I (Apr 1–May 8) if you apply by March 18.
             </p>
             <button
@@ -97,7 +97,7 @@ function GreensboroPage() {
       <GreensboroHero />
 
 {/* Section 2: Credibility Strip */}
-<section className="bg-gray-50 py-12 md:py-16">
+<section className="bg-gray-50 pt-2 pb-6 md:pt-3 md:pb-8">
   <div className="max-w-6xl mx-auto px-4">
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center items-stretch">
       <div className="flex flex-col items-center justify-center gap-3 min-h-[120px]">
