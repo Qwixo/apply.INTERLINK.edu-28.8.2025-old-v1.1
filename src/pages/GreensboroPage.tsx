@@ -641,21 +641,12 @@ function GreensboroPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
               How to apply
             </h2>
-            <p className="text-lg text-gray-700 mb-8">
+            <p className="text-lg text-gray-700 mb-2">
               3 simple steps. We help you.
             </p>
-
-            <div className="bg-white border border-gray-200 rounded-xl p-4 flex items-center gap-4 inline-flex">
-              <img
-                src="https://i.imgur.com/pg4XxDm.png"
-                alt="Ana"
-                className="w-16 h-16 rounded-full object-cover flex-shrink-0"
-              />
-              <div className="text-left">
-                <p className="font-bold text-gray-900">Your advisor: Ana</p>
-                <p className="text-sm text-gray-700">Ana will help you step by step.</p>
-              </div>
-            </div>
+            <p className="text-gray-700">
+              An advisor will help you.
+            </p>
           </div>
 
           <div className="space-y-4 mb-12">
