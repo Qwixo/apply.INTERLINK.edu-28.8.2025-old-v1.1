@@ -620,7 +620,7 @@ function GreensboroPage() {
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 md:p-5">
               <h4 className="font-bold text-gray-900 mb-1">How long?</h4>
-              <p className="text-sm text-gray-600">Most students finish in 4–12 months.</p>
+              <p className="text-sm text-gray-600">One term is 5 weeks. Most students finish the full course in 4–12 months.</p>
             </div>
           </div>
 
