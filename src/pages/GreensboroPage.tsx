@@ -121,70 +121,58 @@ function GreensboroPage() {
       </section>
 
       {/* Section 3: Pain Block */}
-      <section className="bg-gradient-to-b from-white to-gray-50 py-16 md:py-24">
+      <section className="bg-gray-50 py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-              English feels hard in real life.
-            </h2>
+          <div className="bg-white border border-gray-200 rounded-2xl shadow-sm p-6 md:p-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Left Column */}
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                  English feels hard in real life.
+                </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-              {/* Card 1 */}
-              <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all border-l-4 border-[#dc5d33]">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0">
-                    <MessageSquare className="w-5 h-5 text-[#dc5d33]" />
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <MessageSquare className="w-5 h-5 text-[#dc5d33] flex-shrink-0 mt-0.5" />
+                    <p className="text-gray-700">You know what you want to say, but words don't come.</p>
                   </div>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    You know what you want to say, but words don't come.
-                  </p>
+
+                  <div className="flex items-start gap-3">
+                    <Users className="w-5 h-5 text-[#dc5d33] flex-shrink-0 mt-0.5" />
+                    <p className="text-gray-700">At work or school, you feel quiet.</p>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <HelpCircle className="w-5 h-5 text-[#dc5d33] flex-shrink-0 mt-0.5" />
+                    <p className="text-gray-700">People speak fast. You miss important details.</p>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <Lightbulb className="w-5 h-5 text-[#dc5d33] flex-shrink-0 mt-0.5" />
+                    <p className="text-gray-700">You feel stressed and not taken seriously.</p>
+                  </div>
                 </div>
               </div>
 
-              {/* Card 2 */}
-              <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all border-l-4 border-[#dc5d33]">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0">
-                    <Users className="w-5 h-5 text-[#dc5d33]" />
-                  </div>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    At work or school, you feel quiet.
+              {/* Right Column */}
+              <div className="flex flex-col justify-center">
+                <div className="bg-blue-50 border border-blue-100 rounded-xl p-5 mb-6">
+                  <h3 className="text-lg font-bold text-gray-900 mb-3">The truth</h3>
+                  <p className="text-base text-gray-700">
+                    It's not because you are not smart.
+                  </p>
+                  <p className="text-base font-semibold text-gray-900 mt-2">
+                    You just need practice.
                   </p>
                 </div>
-              </div>
 
-              {/* Card 3 */}
-              <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all border-l-4 border-[#dc5d33]">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0">
-                    <HelpCircle className="w-5 h-5 text-[#dc5d33]" />
-                  </div>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    People speak fast. You miss important details.
-                  </p>
-                </div>
+                <button
+                  onClick={scrollToApply}
+                  className="bg-[#dc5d33] text-white font-bold text-base px-6 py-3 rounded-lg shadow-md hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-lg"
+                >
+                  Get more practice
+                </button>
               </div>
-
-              {/* Card 4 */}
-              <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all border-l-4 border-[#dc5d33]">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0">
-                    <Lightbulb className="w-5 h-5 text-[#dc5d33]" />
-                  </div>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    You feel stressed and not taken seriously.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center bg-[#064088] rounded-2xl p-8 md:p-10">
-              <p className="text-xl md:text-2xl text-white font-medium">
-                It's not because you are not smart.
-              </p>
-              <p className="text-xl md:text-2xl text-white font-bold mt-2">
-                You just need practice.
-              </p>
             </div>
           </div>
         </div>
