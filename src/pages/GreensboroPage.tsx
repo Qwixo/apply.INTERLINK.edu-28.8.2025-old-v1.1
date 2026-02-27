@@ -788,51 +788,84 @@ function GreensboroPage() {
         </div>
       </section>
 
-      {/* SECTION B: Decision block */}
+      {/* SECTION B: Two Paths */}
       <section className="bg-gray-100 py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-              Make a decision
+              Choose your path
             </h2>
             <p className="text-lg text-gray-700">
-              Choose your path today.
+              One keeps you stuck. One fixes it.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Left option: Keep doing free learning */}
-            <div className="bg-white rounded-2xl p-8 shadow-md">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Keep doing free learning
+            {/* Left card: Keep struggling */}
+            <div className="bg-gray-200 rounded-2xl p-8 shadow-md">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                Keep struggling
               </h3>
-              <p className="text-lg text-gray-700 mb-6">
-                Watch videos and hope it clicks.
-              </p>
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-start gap-3">
+                  <span className="text-gray-700">•</span>
+                  <span className="text-lg text-gray-700">You freeze when people talk fast.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-gray-700">•</span>
+                  <span className="text-lg text-gray-700">You avoid speaking at work.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-gray-700">•</span>
+                  <span className="text-lg text-gray-700">You feel small and not taken seriously.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-gray-700">•</span>
+                  <span className="text-lg text-gray-700">Weeks pass. Nothing changes.</span>
+                </li>
+              </ul>
               <a
                 href="https://www.youtube.com/results?search_query=free+english+course"
                 target="_blank"
                 rel="noreferrer"
                 className="block w-full bg-gray-500 text-white font-bold text-lg px-8 py-4 rounded-lg hover:bg-gray-600 transition-all duration-300 text-center"
               >
-                Keep searching free courses
+                Keep watching free videos
               </a>
             </div>
 
-            {/* Right option: Commit to real practice */}
+            {/* Right card: Commit to real practice */}
             <div className="bg-[#064088] rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-white mb-4">
+              <h3 className="text-2xl font-bold text-white mb-6">
                 Commit to real practice
               </h3>
-              <p className="text-lg text-white mb-6">
-                Live classes. You speak every day.
-              </p>
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-start gap-3">
+                  <span className="text-white">•</span>
+                  <span className="text-lg text-white">Live class, Monday–Friday</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-white">•</span>
+                  <span className="text-lg text-white">You speak every day</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-white">•</span>
+                  <span className="text-lg text-white">Small groups + feedback</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-white">•</span>
+                  <span className="text-lg text-white">Clear level placement</span>
+                </li>
+              </ul>
               <button
                 onClick={scrollToApply}
-                className="w-full bg-[#dc5d33] text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
+                className="w-full bg-[#dc5d33] text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5 mb-3"
               >
-                Commit to real progress
+                Start real practice
               </button>
+              <p className="text-center text-sm text-white font-medium">
+                Serious students only.
+              </p>
             </div>
           </div>
         </div>
