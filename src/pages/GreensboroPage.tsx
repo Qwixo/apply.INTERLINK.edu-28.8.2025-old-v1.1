@@ -82,7 +82,7 @@ function GreensboroPage() {
         >
           <div className="max-w-7xl mx-auto flex items-center justify-center relative">
             <p className="text-xs md:text-sm leading-tight text-center group-hover:underline">
-              20% off Spring I (Apr 1–May 8) if you apply by March 18.
+              Save up to $340 on Spring I (Apr 1–May 8) if you apply by March 18.
             </p>
             <button
               onClick={handleCloseBanner}
