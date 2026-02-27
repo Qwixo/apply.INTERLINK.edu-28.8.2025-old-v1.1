@@ -1186,9 +1186,9 @@ function GreensboroPage() {
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064088] focus:border-transparent"
                     >
                       <option value="">Select an option</option>
-                      <option value="yes">Yes, I'm ready</option>
-                      <option value="maybe">Maybe, I have questions</option>
-                      <option value="not-now">Not right now</option>
+                      <option value="yes">Yes, I will show up</option>
+                      <option value="maybe">I have questions first</option>
+                      <option value="not-now">No</option>
                     </select>
                   </div>
 
