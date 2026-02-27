@@ -612,18 +612,6 @@ function GreensboroPage() {
             </div>
           </div>
 
-          {/* Levels & Time */}
-          <div className="grid grid-cols-2 gap-4 mb-8">
-            <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 md:p-5">
-              <h4 className="font-bold text-gray-900 mb-1">6 levels</h4>
-              <p className="text-sm text-gray-600">Placement test puts you in the right level.</p>
-            </div>
-            <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 md:p-5">
-              <h4 className="font-bold text-gray-900 mb-1">How long?</h4>
-              <p className="text-sm text-gray-600">One term is 5 weeks. Most students finish the full course in 4–12 months.</p>
-            </div>
-          </div>
-
           {/* CTA Buttons */}
           <div className="flex flex-col md:flex-row gap-4">
             <button
