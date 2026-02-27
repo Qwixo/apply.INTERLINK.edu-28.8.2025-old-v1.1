@@ -78,15 +78,15 @@ function GreensboroPage() {
       {showBanner && (
         <div
           onClick={handleBannerClick}
-          className="sticky top-0 z-50 w-full bg-red-600 text-white cursor-pointer py-2 px-4"
+          className="sticky top-0 z-50 w-full bg-red-600 text-white cursor-pointer py-2 px-4 group"
         >
-          <div className="max-w-7xl mx-auto flex items-center justify-between">
-            <p className="text-xs md:text-sm leading-tight">
+          <div className="max-w-7xl mx-auto flex items-center justify-center relative">
+            <p className="text-xs md:text-sm leading-tight text-center group-hover:underline">
               20% off Spring I (Apr 1–May 8) if you apply by March 18.
             </p>
             <button
               onClick={handleCloseBanner}
-              className="p-2 hover:bg-red-700 rounded transition-colors flex-shrink-0 ml-2"
+              className="absolute right-0 p-2 hover:bg-red-700 rounded transition-colors flex-shrink-0"
               aria-label="Close banner"
             >
               <X className="w-4 h-4" />
