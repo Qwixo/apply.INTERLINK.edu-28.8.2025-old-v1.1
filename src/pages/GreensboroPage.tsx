@@ -439,7 +439,7 @@ function GreensboroPage() {
             </p>
           </div>
 
-          <div className="overflow-x-auto mb-8">
+          <div className="hidden md:block overflow-x-auto mb-8">
             <table className="w-full border-collapse">
               <thead>
                 <tr className="bg-gray-50 border-b-2 border-gray-300">
@@ -533,6 +533,73 @@ function GreensboroPage() {
             </table>
           </div>
 
+          {/* Mobile Cards */}
+          <div className="md:hidden space-y-4 mb-8">
+            {/* Spring I */}
+            <div className="bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="font-semibold text-gray-900">Spring I 2026</span>
+                <span className="bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">20% OFF</span>
+              </div>
+              <p className="text-sm text-gray-700">Dates: Apr 1 – May 8</p>
+              <p className="text-sm text-gray-700 mb-2">Apply by: March 18</p>
+              <div className="font-bold text-gray-900">
+                Full-time: $1,360
+                <span className="text-xs text-gray-500 font-normal"> (was $1,700)</span>
+              </div>
+              <div className="text-sm text-gray-600">
+                Part-time: $680
+                <span className="text-xs text-gray-500"> (was $850)</span>
+              </div>
+              <div className="text-sm text-red-600 font-semibold mt-1">Save up to $340</div>
+            </div>
+
+            {/* Spring II */}
+            <div className="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
+              <div className="font-semibold text-gray-900 mb-2">Spring II 2026</div>
+              <p className="text-sm text-gray-700">Dates: May 12 – Jun 17</p>
+              <p className="text-sm text-gray-700 mb-2">Apply by: April 28</p>
+              <div className="font-bold text-gray-900">Full-time: $1,700</div>
+              <div className="text-sm text-gray-600">Part-time: $850</div>
+            </div>
+
+            {/* Summer */}
+            <div className="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
+              <div className="font-semibold text-gray-900 mb-2">Summer 2026</div>
+              <p className="text-sm text-gray-700">Dates: Jun 19 – Jul 28</p>
+              <p className="text-sm text-gray-700 mb-2">Apply by: June 5</p>
+              <div className="font-bold text-gray-900">Full-time: $1,700</div>
+              <div className="text-sm text-gray-600">Part-time: $850</div>
+            </div>
+
+            {/* Fall I */}
+            <div className="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
+              <div className="font-semibold text-gray-900 mb-2">Fall I 2026</div>
+              <p className="text-sm text-gray-700">Dates: Aug 17 – Sep 23</p>
+              <p className="text-sm text-gray-700 mb-2">Apply by: August 3</p>
+              <div className="font-bold text-gray-900">Full-time: $1,700</div>
+              <div className="text-sm text-gray-600">Part-time: $850</div>
+            </div>
+
+            {/* Fall II */}
+            <div className="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
+              <div className="font-semibold text-gray-900 mb-2">Fall II 2026</div>
+              <p className="text-sm text-gray-700">Dates: Sep 25 – Nov 3</p>
+              <p className="text-sm text-gray-700 mb-2">Apply by: See dates & fees</p>
+              <div className="font-bold text-gray-900">Full-time: $1,700</div>
+              <div className="text-sm text-gray-600">Part-time: $850</div>
+            </div>
+
+            {/* Fall III */}
+            <div className="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
+              <div className="font-semibold text-gray-900 mb-2">Fall III 2026</div>
+              <p className="text-sm text-gray-700">Dates: Nov 5 – Dec 16</p>
+              <p className="text-sm text-gray-700 mb-2">Apply by: See dates & fees</p>
+              <div className="font-bold text-gray-900">Full-time: $1,700</div>
+              <div className="text-sm text-gray-600">Part-time: $850</div>
+            </div>
+          </div>
+
           {/* Pricing Note Box */}
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 md:p-8 mb-8">
             <h3 className="font-bold text-gray-900 mb-3">Pricing</h3>
@@ -542,6 +609,18 @@ function GreensboroPage() {
               <p className="text-sm pt-2 border-t border-blue-200 mt-4">
                 <span className="font-semibold">Spring I discount:</span> Save $340 on full-time ($1,360) or $170 on part-time ($680). Apply by March 18.
               </p>
+            </div>
+          </div>
+
+          {/* Levels & Time */}
+          <div className="grid grid-cols-2 gap-4 mb-8">
+            <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 md:p-5">
+              <h4 className="font-bold text-gray-900 mb-1">6 levels</h4>
+              <p className="text-sm text-gray-600">Placement test puts you in the right level.</p>
+            </div>
+            <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 md:p-5">
+              <h4 className="font-bold text-gray-900 mb-1">How long?</h4>
+              <p className="text-sm text-gray-600">Most students finish in 4–12 months.</p>
             </div>
           </div>
 
